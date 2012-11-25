@@ -4,4 +4,7 @@
 
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
+    #import "LSApplicationData.h"
+    #import "NSColor+CGColor.h"
+    #define NEW_WAY
 #endif

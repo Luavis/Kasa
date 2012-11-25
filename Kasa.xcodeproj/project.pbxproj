@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A70A7B501647EC7700F4594B /* NSColor+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A70A7B4F1647EC7700F4594B /* NSColor+CGColor.m */; };
+		A723E94A16434543005EDA30 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A723E94916434543005EDA30 /* icon.icns */; };
 		A7292208163F7E6D00F9D73C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7292207163F7E6D00F9D73C /* Cocoa.framework */; };
 		A7292212163F7E6D00F9D73C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7292210163F7E6D00F9D73C /* InfoPlist.strings */; };
 		A7292214163F7E6D00F9D73C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7292213163F7E6D00F9D73C /* main.m */; };
-		A7292218163F7E6D00F9D73C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A7292216163F7E6D00F9D73C /* Credits.rtf */; };
-		A729221B163F7E6D00F9D73C /* LSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A729221A163F7E6D00F9D73C /* LSAppDelegate.m */; };
+		A729221B163F7E6D00F9D73C /* LSApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = A729221A163F7E6D00F9D73C /* LSApplication.m */; };
 		A729221E163F7E6D00F9D73C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A729221C163F7E6D00F9D73C /* MainMenu.xib */; };
+		A7292226163F7E8200F9D73C /* LSKasaGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = A7292225163F7E8200F9D73C /* LSKasaGetter.m */; };
+		A748886B1640B18900C5D6DF /* Md5.m in Sources */ = {isa = PBXBuildFile; fileRef = A748886A1640B18900C5D6DF /* Md5.m */; };
+		A748886F1640B86200C5D6DF /* LSApplicationData.m in Sources */ = {isa = PBXBuildFile; fileRef = A748886E1640B86200C5D6DF /* LSApplicationData.m */; };
+		A7AA0631165508EB00C790D8 /* LSLyricsCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA0630165508EB00C790D8 /* LSLyricsCache.m */; };
+		A7AEDE69164160C70070FEE1 /* LSLRCDecoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7AEDE68164160C70070FEE1 /* LSLRCDecoder.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7C1B16B1640EB5F007A4E87 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C1B16A1640EB5F007A4E87 /* Quartz.framework */; };
+		A7C1B16F16410344007A4E87 /* LSLyricTextField.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7C1B16E16410344007A4E87 /* LSLyricTextField.mm */; };
+		A7C1B17216410367007A4E87 /* LSiTunesConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C1B17116410366007A4E87 /* LSiTunesConnection.m */; };
+		A7D76BB0163FF31B00DAB7CC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D76BAF163FF31B00DAB7CC /* AudioToolbox.framework */; };
+		A7D76BBC163FFB0C00DAB7CC /* OverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D76BBB163FFB0C00DAB7CC /* OverlayWindow.m */; };
+		A7D76BC1163FFBDF00DAB7CC /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D76BC0163FFBDF00DAB7CC /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A70A7B4E1647EC7700F4594B /* NSColor+CGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+CGColor.h"; sourceTree = "<group>"; };
+		A70A7B4F1647EC7700F4594B /* NSColor+CGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+CGColor.m"; sourceTree = "<group>"; };
+		A723E94916434543005EDA30 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../icon.icns; sourceTree = "<group>"; };
 		A7292203163F7E6D00F9D73C /* Kasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7292207163F7E6D00F9D73C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A729220A163F7E6D00F9D73C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -25,10 +40,28 @@
 		A7292211163F7E6D00F9D73C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A7292213163F7E6D00F9D73C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A7292215163F7E6D00F9D73C /* Kasa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kasa-Prefix.pch"; sourceTree = "<group>"; };
-		A7292217163F7E6D00F9D73C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		A7292219163F7E6D00F9D73C /* LSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSAppDelegate.h; sourceTree = "<group>"; };
-		A729221A163F7E6D00F9D73C /* LSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSAppDelegate.m; sourceTree = "<group>"; };
+		A7292219163F7E6D00F9D73C /* LSApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSApplication.h; sourceTree = "<group>"; };
+		A729221A163F7E6D00F9D73C /* LSApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSApplication.m; sourceTree = "<group>"; };
 		A729221D163F7E6D00F9D73C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A7292224163F7E8200F9D73C /* LSKasaGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSKasaGetter.h; sourceTree = "<group>"; };
+		A7292225163F7E8200F9D73C /* LSKasaGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSKasaGetter.m; sourceTree = "<group>"; };
+		A74888691640B18900C5D6DF /* Md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Md5.h; sourceTree = "<group>"; };
+		A748886A1640B18900C5D6DF /* Md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Md5.m; sourceTree = "<group>"; };
+		A748886D1640B86200C5D6DF /* LSApplicationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationData.h; sourceTree = "<group>"; };
+		A748886E1640B86200C5D6DF /* LSApplicationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSApplicationData.m; sourceTree = "<group>"; };
+		A7AA062F165508EB00C790D8 /* LSLyricsCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLyricsCache.h; sourceTree = "<group>"; };
+		A7AA0630165508EB00C790D8 /* LSLyricsCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLyricsCache.m; sourceTree = "<group>"; };
+		A7AEDE67164160C70070FEE1 /* LSLRCDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLRCDecoder.h; sourceTree = "<group>"; };
+		A7AEDE68164160C70070FEE1 /* LSLRCDecoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LSLRCDecoder.mm; sourceTree = "<group>"; };
+		A7AEDE76164204F00070FEE1 /* LSLyricTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLyricTextField.h; sourceTree = "<group>"; };
+		A7C1B16A1640EB5F007A4E87 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		A7C1B16E16410344007A4E87 /* LSLyricTextField.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LSLyricTextField.mm; sourceTree = "<group>"; };
+		A7C1B17016410366007A4E87 /* LSiTunesConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSiTunesConnection.h; sourceTree = "<group>"; };
+		A7C1B17116410366007A4E87 /* LSiTunesConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSiTunesConnection.m; sourceTree = "<group>"; };
+		A7D76BAF163FF31B00DAB7CC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A7D76BBA163FFB0C00DAB7CC /* OverlayWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayWindow.h; sourceTree = "<group>"; };
+		A7D76BBB163FFB0C00DAB7CC /* OverlayWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayWindow.m; sourceTree = "<group>"; };
+		A7D76BC0163FFBDF00DAB7CC /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7C1B16B1640EB5F007A4E87 /* Quartz.framework in Frameworks */,
+				A7D76BC1163FFBDF00DAB7CC /* Carbon.framework in Frameworks */,
+				A7D76BB0163FF31B00DAB7CC /* AudioToolbox.framework in Frameworks */,
 				A7292208163F7E6D00F9D73C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +99,9 @@
 		A7292206163F7E6D00F9D73C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7C1B16A1640EB5F007A4E87 /* Quartz.framework */,
+				A7D76BC0163FFBDF00DAB7CC /* Carbon.framework */,
+				A7D76BAF163FF31B00DAB7CC /* AudioToolbox.framework */,
 				A7292207163F7E6D00F9D73C /* Cocoa.framework */,
 				A7292209163F7E6D00F9D73C /* Other Frameworks */,
 			);
@@ -82,9 +121,17 @@
 		A729220D163F7E6D00F9D73C /* Kasa */ = {
 			isa = PBXGroup;
 			children = (
-				A7292219163F7E6D00F9D73C /* LSAppDelegate.h */,
-				A729221A163F7E6D00F9D73C /* LSAppDelegate.m */,
-				A729221C163F7E6D00F9D73C /* MainMenu.xib */,
+				A7795A6A1647DAC700F3F546 /* NSColor+CGColor */,
+				A7AEDE6B164160CC0070FEE1 /* LRC Decoder */,
+				A7C1B1761641038E007A4E87 /* MD5 */,
+				A7C1B1751641038A007A4E87 /* Delegate */,
+				A7C1B17416410373007A4E87 /* Lyric View */,
+				A7C1B17316410369007A4E87 /* itunes connection */,
+				A7AA0633165515BB00C790D8 /* Cache */,
+				A7C1B17716410397007A4E87 /* Kasa downloader */,
+				A7C1B1781641039E007A4E87 /* Overlay Window */,
+				A7C1B179164103A6007A4E87 /* Application Data */,
+				A7C1B17A164103B0007A4E87 /* Resource */,
 				A729220E163F7E6D00F9D73C /* Supporting Files */,
 			);
 			path = Kasa;
@@ -97,9 +144,107 @@
 				A7292210163F7E6D00F9D73C /* InfoPlist.strings */,
 				A7292213163F7E6D00F9D73C /* main.m */,
 				A7292215163F7E6D00F9D73C /* Kasa-Prefix.pch */,
-				A7292216163F7E6D00F9D73C /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7795A6A1647DAC700F3F546 /* NSColor+CGColor */ = {
+			isa = PBXGroup;
+			children = (
+				A70A7B4E1647EC7700F4594B /* NSColor+CGColor.h */,
+				A70A7B4F1647EC7700F4594B /* NSColor+CGColor.m */,
+			);
+			name = "NSColor+CGColor";
+			sourceTree = "<group>";
+		};
+		A7AA0633165515BB00C790D8 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				A7AA062F165508EB00C790D8 /* LSLyricsCache.h */,
+				A7AA0630165508EB00C790D8 /* LSLyricsCache.m */,
+			);
+			name = Cache;
+			sourceTree = "<group>";
+		};
+		A7AEDE6B164160CC0070FEE1 /* LRC Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEDE67164160C70070FEE1 /* LSLRCDecoder.h */,
+				A7AEDE68164160C70070FEE1 /* LSLRCDecoder.mm */,
+			);
+			name = "LRC Decoder";
+			sourceTree = "<group>";
+		};
+		A7C1B17316410369007A4E87 /* itunes connection */ = {
+			isa = PBXGroup;
+			children = (
+				A7C1B17016410366007A4E87 /* LSiTunesConnection.h */,
+				A7C1B17116410366007A4E87 /* LSiTunesConnection.m */,
+			);
+			name = "itunes connection";
+			sourceTree = "<group>";
+		};
+		A7C1B17416410373007A4E87 /* Lyric View */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEDE76164204F00070FEE1 /* LSLyricTextField.h */,
+				A7C1B16E16410344007A4E87 /* LSLyricTextField.mm */,
+			);
+			name = "Lyric View";
+			sourceTree = "<group>";
+		};
+		A7C1B1751641038A007A4E87 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				A7292219163F7E6D00F9D73C /* LSApplication.h */,
+				A729221A163F7E6D00F9D73C /* LSApplication.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		A7C1B1761641038E007A4E87 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				A74888691640B18900C5D6DF /* Md5.h */,
+				A748886A1640B18900C5D6DF /* Md5.m */,
+			);
+			name = MD5;
+			sourceTree = "<group>";
+		};
+		A7C1B17716410397007A4E87 /* Kasa downloader */ = {
+			isa = PBXGroup;
+			children = (
+				A7292224163F7E8200F9D73C /* LSKasaGetter.h */,
+				A7292225163F7E8200F9D73C /* LSKasaGetter.m */,
+			);
+			name = "Kasa downloader";
+			sourceTree = "<group>";
+		};
+		A7C1B1781641039E007A4E87 /* Overlay Window */ = {
+			isa = PBXGroup;
+			children = (
+				A7D76BBA163FFB0C00DAB7CC /* OverlayWindow.h */,
+				A7D76BBB163FFB0C00DAB7CC /* OverlayWindow.m */,
+			);
+			name = "Overlay Window";
+			sourceTree = "<group>";
+		};
+		A7C1B179164103A6007A4E87 /* Application Data */ = {
+			isa = PBXGroup;
+			children = (
+				A748886D1640B86200C5D6DF /* LSApplicationData.h */,
+				A748886E1640B86200C5D6DF /* LSApplicationData.m */,
+			);
+			name = "Application Data";
+			sourceTree = "<group>";
+		};
+		A7C1B17A164103B0007A4E87 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A729221C163F7E6D00F9D73C /* MainMenu.xib */,
+				A723E94916434543005EDA30 /* icon.icns */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7292212163F7E6D00F9D73C /* InfoPlist.strings in Resources */,
-				A7292218163F7E6D00F9D73C /* Credits.rtf in Resources */,
 				A729221E163F7E6D00F9D73C /* MainMenu.xib in Resources */,
+				A723E94A16434543005EDA30 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +313,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7292214163F7E6D00F9D73C /* main.m in Sources */,
-				A729221B163F7E6D00F9D73C /* LSAppDelegate.m in Sources */,
+				A729221B163F7E6D00F9D73C /* LSApplication.m in Sources */,
+				A7292226163F7E8200F9D73C /* LSKasaGetter.m in Sources */,
+				A7D76BBC163FFB0C00DAB7CC /* OverlayWindow.m in Sources */,
+				A748886B1640B18900C5D6DF /* Md5.m in Sources */,
+				A748886F1640B86200C5D6DF /* LSApplicationData.m in Sources */,
+				A7C1B16F16410344007A4E87 /* LSLyricTextField.mm in Sources */,
+				A7C1B17216410367007A4E87 /* LSiTunesConnection.m in Sources */,
+				A7AEDE69164160C70070FEE1 /* LSLRCDecoder.mm in Sources */,
+				A70A7B501647EC7700F4594B /* NSColor+CGColor.m in Sources */,
+				A7AA0631165508EB00C790D8 /* LSLyricsCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,14 +335,6 @@
 				A7292211163F7E6D00F9D73C /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A7292216163F7E6D00F9D73C /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7292217163F7E6D00F9D73C /* en */,
-			);
-			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
 		A729221C163F7E6D00F9D73C /* MainMenu.xib */ = {
@@ -258,11 +404,15 @@
 		A7292222163F7E6D00F9D73C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kasa/Kasa-Prefix.pch";
 				INFOPLIST_FILE = "Kasa/Kasa-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -270,11 +420,15 @@
 		A7292223163F7E6D00F9D73C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kasa/Kasa-Prefix.pch";
 				INFOPLIST_FILE = "Kasa/Kasa-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -298,6 +452,7 @@
 				A7292223163F7E6D00F9D73C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

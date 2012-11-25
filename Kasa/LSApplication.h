@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "LSLyricTextField.h"
 
-@interface LSAppDelegate : NSObject <NSApplicationDelegate>
+@interface LSApplication : NSObject
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (assign) IBOutlet LSLyricTextField *lyricView;
+@property (assign) IBOutlet NSTextField *informationLabel;
 @end
