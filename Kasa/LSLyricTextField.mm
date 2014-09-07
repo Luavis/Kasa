@@ -108,7 +108,7 @@ void reGen(id target, SEL sel ,LRCArray * arr, int serial);
         
         
         
-        [[NSRunLoop currentRunLoop] ]
+        // [[NSRunLoop currentRunLoop] ]
         //initialize lyric view
         dispatch_sync(dispatch_get_main_queue(), ^
         {
