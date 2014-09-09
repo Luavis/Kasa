@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A71097A219BCADBA0034FE88 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097A119BCADBA0034FE88 /* main.swift */; };
+		A71097A419BCADBA0034FE88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097A319BCADBA0034FE88 /* AppDelegate.swift */; };
+		A71097A619BCADBA0034FE88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71097A519BCADBA0034FE88 /* Images.xcassets */; };
+		A71097A919BCADBA0034FE88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A71097A719BCADBA0034FE88 /* MainMenu.xib */; };
+		A71097B519BCADBA0034FE88 /* Kasa_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097B419BCADBA0034FE88 /* Kasa_swiftTests.swift */; };
+		A71097C119BCB2480034FE88 /* OverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A71097C019BCB2480034FE88 /* OverlayWindow.m */; };
+		A71097C319BCB3FE0034FE88 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097C219BCB3FE0034FE88 /* AppData.swift */; };
+		A71097C519BCB9A10034FE88 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097C419BCB9A10034FE88 /* MainWindowController.swift */; };
+		A71097C719BCBA8E0034FE88 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A71097C619BCBA8E0034FE88 /* MainWindow.xib */; };
+		A71097C919BCC1380034FE88 /* NSColor+CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097C819BCC1370034FE88 /* NSColor+CGColor.swift */; };
+		A73F839919BD55EC00D091E1 /* LyricTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73F839819BD55EC00D091E1 /* LyricTextField.swift */; };
+		A73F83AF19BD6A0C00D091E1 /* LRCArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73F83AE19BD6A0C00D091E1 /* LRCArray.swift */; };
+		A79F19A519BCC6AC00A32155 /* Md5.m in Sources */ = {isa = PBXBuildFile; fileRef = A79F19A419BCC6AC00A32155 /* Md5.m */; };
+		A79F19A819BCC6B700A32155 /* LSiTunesConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A79F19A719BCC6B700A32155 /* LSiTunesConnection.m */; };
+		A79F19AB19BCC6BF00A32155 /* LSLyricsCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A79F19AA19BCC6BF00A32155 /* LSLyricsCache.m */; };
+		A79F19AE19BCC6C800A32155 /* LSKasaGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = A79F19AD19BCC6C800A32155 /* LSKasaGetter.m */; };
+		A79F19B319BCC89500A32155 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79F19B219BCC89500A32155 /* Quartz.framework */; };
+		A79F19B819BCCBEE00A32155 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79F19B719BCCBEE00A32155 /* Cocoa.framework */; };
+		A79F19BA19BCCBFD00A32155 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79F19B919BCCBFD00A32155 /* AppKit.framework */; };
+		A79F19BC19BCCC0A00A32155 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79F19BB19BCCC0A00A32155 /* Carbon.framework */; };
+		A79F19BE19BCCC1600A32155 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79F19BD19BCCC1600A32155 /* AudioToolbox.framework */; };
+		A79F19C019BCCC2600A32155 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79F19BF19BCCC2600A32155 /* Foundation.framework */; };
+		A7B8721E19BEA78E0091E37A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A7B8720419BEA78E0091E37A /* LICENSE */; };
+		A7B8721F19BEA78E0091E37A /* NSAppleEvent+HandlerTest.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A7B8720519BEA78E0091E37A /* NSAppleEvent+HandlerTest.scpt */; };
+		A7B8722019BEA78E0091E37A /* NSAppleEventDescriptor+Array.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8720719BEA78E0091E37A /* NSAppleEventDescriptor+Array.m */; };
+		A7B8722219BEA78E0091E37A /* NSAppleEventDescriptor+Null.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8720B19BEA78E0091E37A /* NSAppleEventDescriptor+Null.m */; };
+		A7B8722419BEA78E0091E37A /* NSAppleEventDescriptor+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8720F19BEA78E0091E37A /* NSAppleEventDescriptor+Number.m */; };
+		A7B8722619BEA78E0091E37A /* NSAppleEventDescriptor+Object.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8721319BEA78E0091E37A /* NSAppleEventDescriptor+Object.m */; };
+		A7B8722819BEA78E0091E37A /* NSAppleEventDescriptor+String.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8721719BEA78E0091E37A /* NSAppleEventDescriptor+String.m */; };
+		A7B8722A19BEA78E0091E37A /* NSAppleScript+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8721B19BEA78E0091E37A /* NSAppleScript+Handler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A71097AF19BCADBA0034FE88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A710979419BCADB90034FE88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A710979B19BCADBA0034FE88;
+			remoteInfo = Kasa.swift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A710979C19BCADBA0034FE88 /* Kasa.swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kasa.swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71097A019BCADBA0034FE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A71097A119BCADBA0034FE88 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A71097A319BCADBA0034FE88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A71097A519BCADBA0034FE88 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A71097A819BCADBA0034FE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A71097AE19BCADBA0034FE88 /* Kasa.swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kasa.swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71097B319BCADBA0034FE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A71097B419BCADBA0034FE88 /* Kasa_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kasa_swiftTests.swift; sourceTree = "<group>"; };
+		A71097BE19BCB2470034FE88 /* Kasa.swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kasa.swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		A71097BF19BCB2480034FE88 /* OverlayWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayWindow.h; sourceTree = "<group>"; };
+		A71097C019BCB2480034FE88 /* OverlayWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayWindow.m; sourceTree = "<group>"; };
+		A71097C219BCB3FE0034FE88 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		A71097C419BCB9A10034FE88 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		A71097C619BCBA8E0034FE88 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		A71097C819BCC1370034FE88 /* NSColor+CGColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+CGColor.swift"; sourceTree = "<group>"; };
+		A73F839819BD55EC00D091E1 /* LyricTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricTextField.swift; sourceTree = "<group>"; };
+		A73F839A19BD572C00D091E1 /* swift_test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = swift_test.playground; sourceTree = "<group>"; };
+		A73F83AE19BD6A0C00D091E1 /* LRCArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRCArray.swift; sourceTree = "<group>"; };
+		A79F19A319BCC6AC00A32155 /* Md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Md5.h; sourceTree = "<group>"; };
+		A79F19A419BCC6AC00A32155 /* Md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Md5.m; sourceTree = "<group>"; };
+		A79F19A619BCC6B700A32155 /* LSiTunesConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSiTunesConnection.h; sourceTree = "<group>"; };
+		A79F19A719BCC6B700A32155 /* LSiTunesConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSiTunesConnection.m; sourceTree = "<group>"; };
+		A79F19A919BCC6BF00A32155 /* LSLyricsCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLyricsCache.h; sourceTree = "<group>"; };
+		A79F19AA19BCC6BF00A32155 /* LSLyricsCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLyricsCache.m; sourceTree = "<group>"; };
+		A79F19AC19BCC6C800A32155 /* LSKasaGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSKasaGetter.h; sourceTree = "<group>"; };
+		A79F19AD19BCC6C800A32155 /* LSKasaGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSKasaGetter.m; sourceTree = "<group>"; };
+		A79F19B219BCC89500A32155 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		A79F19B719BCCBEE00A32155 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A79F19B919BCCBFD00A32155 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A79F19BB19BCCC0A00A32155 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		A79F19BD19BCCC1600A32155 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A79F19BF19BCCC2600A32155 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A7B8720419BEA78E0091E37A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A7B8720519BEA78E0091E37A /* NSAppleEvent+HandlerTest.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NSAppleEvent+HandlerTest.scpt"; sourceTree = "<group>"; };
+		A7B8720619BEA78E0091E37A /* NSAppleEventDescriptor+Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAppleEventDescriptor+Array.h"; sourceTree = "<group>"; };
+		A7B8720719BEA78E0091E37A /* NSAppleEventDescriptor+Array.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleEventDescriptor+Array.m"; sourceTree = "<group>"; };
+		A7B8720A19BEA78E0091E37A /* NSAppleEventDescriptor+Null.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAppleEventDescriptor+Null.h"; sourceTree = "<group>"; };
+		A7B8720B19BEA78E0091E37A /* NSAppleEventDescriptor+Null.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleEventDescriptor+Null.m"; sourceTree = "<group>"; };
+		A7B8720E19BEA78E0091E37A /* NSAppleEventDescriptor+Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAppleEventDescriptor+Number.h"; sourceTree = "<group>"; };
+		A7B8720F19BEA78E0091E37A /* NSAppleEventDescriptor+Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleEventDescriptor+Number.m"; sourceTree = "<group>"; };
+		A7B8721219BEA78E0091E37A /* NSAppleEventDescriptor+Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAppleEventDescriptor+Object.h"; sourceTree = "<group>"; };
+		A7B8721319BEA78E0091E37A /* NSAppleEventDescriptor+Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleEventDescriptor+Object.m"; sourceTree = "<group>"; };
+		A7B8721619BEA78E0091E37A /* NSAppleEventDescriptor+String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAppleEventDescriptor+String.h"; sourceTree = "<group>"; };
+		A7B8721719BEA78E0091E37A /* NSAppleEventDescriptor+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleEventDescriptor+String.m"; sourceTree = "<group>"; };
+		A7B8721A19BEA78E0091E37A /* NSAppleScript+Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAppleScript+Handler.h"; sourceTree = "<group>"; };
+		A7B8721B19BEA78E0091E37A /* NSAppleScript+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleScript+Handler.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A710979919BCADBA0034FE88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79F19C019BCCC2600A32155 /* Foundation.framework in Frameworks */,
+				A79F19BE19BCCC1600A32155 /* AudioToolbox.framework in Frameworks */,
+				A79F19BC19BCCC0A00A32155 /* Carbon.framework in Frameworks */,
+				A79F19BA19BCCBFD00A32155 /* AppKit.framework in Frameworks */,
+				A79F19B819BCCBEE00A32155 /* Cocoa.framework in Frameworks */,
+				A79F19B319BCC89500A32155 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71097AB19BCADBA0034FE88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A710979319BCADB90034FE88 = {
+			isa = PBXGroup;
+			children = (
+				A710979E19BCADBA0034FE88 /* Kasa.swift */,
+				A71097B119BCADBA0034FE88 /* Kasa.swiftTests */,
+				A710979D19BCADBA0034FE88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A710979D19BCADBA0034FE88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A710979C19BCADBA0034FE88 /* Kasa.swift.app */,
+				A71097AE19BCADBA0034FE88 /* Kasa.swiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A710979E19BCADBA0034FE88 /* Kasa.swift */ = {
+			isa = PBXGroup;
+			children = (
+				A79F19C119BCCC3000A32155 /* Framework */,
+				A71097A319BCADBA0034FE88 /* AppDelegate.swift */,
+				A71097C819BCC1370034FE88 /* NSColor+CGColor.swift */,
+				A71097C219BCB3FE0034FE88 /* AppData.swift */,
+				A71097BF19BCB2480034FE88 /* OverlayWindow.h */,
+				A71097C019BCB2480034FE88 /* OverlayWindow.m */,
+				A79F19A319BCC6AC00A32155 /* Md5.h */,
+				A79F19A419BCC6AC00A32155 /* Md5.m */,
+				A79F19A619BCC6B700A32155 /* LSiTunesConnection.h */,
+				A79F19A919BCC6BF00A32155 /* LSLyricsCache.h */,
+				A79F19A719BCC6B700A32155 /* LSiTunesConnection.m */,
+				A79F19AA19BCC6BF00A32155 /* LSLyricsCache.m */,
+				A79F19AC19BCC6C800A32155 /* LSKasaGetter.h */,
+				A79F19AD19BCC6C800A32155 /* LSKasaGetter.m */,
+				A73F839819BD55EC00D091E1 /* LyricTextField.swift */,
+				A73F839A19BD572C00D091E1 /* swift_test.playground */,
+				A73F83AE19BD6A0C00D091E1 /* LRCArray.swift */,
+				A71097A519BCADBA0034FE88 /* Images.xcassets */,
+				A71097A719BCADBA0034FE88 /* MainMenu.xib */,
+				A71097C419BCB9A10034FE88 /* MainWindowController.swift */,
+				A71097C619BCBA8E0034FE88 /* MainWindow.xib */,
+				A7B8720419BEA78E0091E37A /* LICENSE */,
+				A7B8722C19BEA7A80091E37A /* AppleScriptToolkit */,
+				A710979F19BCADBA0034FE88 /* Supporting Files */,
+				A71097BE19BCB2470034FE88 /* Kasa.swift-Bridging-Header.h */,
+			);
+			path = Kasa.swift;
+			sourceTree = "<group>";
+		};
+		A710979F19BCADBA0034FE88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A71097A019BCADBA0034FE88 /* Info.plist */,
+				A71097A119BCADBA0034FE88 /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A71097B119BCADBA0034FE88 /* Kasa.swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				A71097B419BCADBA0034FE88 /* Kasa_swiftTests.swift */,
+				A71097B219BCADBA0034FE88 /* Supporting Files */,
+			);
+			path = Kasa.swiftTests;
+			sourceTree = "<group>";
+		};
+		A71097B219BCADBA0034FE88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A71097B319BCADBA0034FE88 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A79F19C119BCCC3000A32155 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				A79F19BF19BCCC2600A32155 /* Foundation.framework */,
+				A79F19BD19BCCC1600A32155 /* AudioToolbox.framework */,
+				A79F19BB19BCCC0A00A32155 /* Carbon.framework */,
+				A79F19B919BCCBFD00A32155 /* AppKit.framework */,
+				A79F19B719BCCBEE00A32155 /* Cocoa.framework */,
+				A79F19B219BCC89500A32155 /* Quartz.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		A7B8722C19BEA7A80091E37A /* AppleScriptToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				A7B8720519BEA78E0091E37A /* NSAppleEvent+HandlerTest.scpt */,
+				A7B8720619BEA78E0091E37A /* NSAppleEventDescriptor+Array.h */,
+				A7B8720719BEA78E0091E37A /* NSAppleEventDescriptor+Array.m */,
+				A7B8720A19BEA78E0091E37A /* NSAppleEventDescriptor+Null.h */,
+				A7B8720B19BEA78E0091E37A /* NSAppleEventDescriptor+Null.m */,
+				A7B8720E19BEA78E0091E37A /* NSAppleEventDescriptor+Number.h */,
+				A7B8720F19BEA78E0091E37A /* NSAppleEventDescriptor+Number.m */,
+				A7B8721219BEA78E0091E37A /* NSAppleEventDescriptor+Object.h */,
+				A7B8721319BEA78E0091E37A /* NSAppleEventDescriptor+Object.m */,
+				A7B8721619BEA78E0091E37A /* NSAppleEventDescriptor+String.h */,
+				A7B8721719BEA78E0091E37A /* NSAppleEventDescriptor+String.m */,
+				A7B8721A19BEA78E0091E37A /* NSAppleScript+Handler.h */,
+				A7B8721B19BEA78E0091E37A /* NSAppleScript+Handler.m */,
+			);
+			name = AppleScriptToolkit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A710979B19BCADBA0034FE88 /* Kasa.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71097B819BCADBA0034FE88 /* Build configuration list for PBXNativeTarget "Kasa.swift" */;
+			buildPhases = (
+				A710979819BCADBA0034FE88 /* Sources */,
+				A710979919BCADBA0034FE88 /* Frameworks */,
+				A710979A19BCADBA0034FE88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kasa.swift;
+			productName = Kasa.swift;
+			productReference = A710979C19BCADBA0034FE88 /* Kasa.swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A71097AD19BCADBA0034FE88 /* Kasa.swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71097BB19BCADBA0034FE88 /* Build configuration list for PBXNativeTarget "Kasa.swiftTests" */;
+			buildPhases = (
+				A71097AA19BCADBA0034FE88 /* Sources */,
+				A71097AB19BCADBA0034FE88 /* Frameworks */,
+				A71097AC19BCADBA0034FE88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A71097B019BCADBA0034FE88 /* PBXTargetDependency */,
+			);
+			name = Kasa.swiftTests;
+			productName = Kasa.swiftTests;
+			productReference = A71097AE19BCADBA0034FE88 /* Kasa.swiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A710979419BCADB90034FE88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Luavis;
+				TargetAttributes = {
+					A710979B19BCADBA0034FE88 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					A71097AD19BCADBA0034FE88 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = A710979B19BCADBA0034FE88;
+					};
+				};
+			};
+			buildConfigurationList = A710979719BCADB90034FE88 /* Build configuration list for PBXProject "Kasa.swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A710979319BCADB90034FE88;
+			productRefGroup = A710979D19BCADBA0034FE88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A710979B19BCADBA0034FE88 /* Kasa.swift */,
+				A71097AD19BCADBA0034FE88 /* Kasa.swiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A710979A19BCADBA0034FE88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71097A619BCADBA0034FE88 /* Images.xcassets in Resources */,
+				A71097A919BCADBA0034FE88 /* MainMenu.xib in Resources */,
+				A7B8721F19BEA78E0091E37A /* NSAppleEvent+HandlerTest.scpt in Resources */,
+				A7B8721E19BEA78E0091E37A /* LICENSE in Resources */,
+				A71097C719BCBA8E0034FE88 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71097AC19BCADBA0034FE88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A710979819BCADBA0034FE88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73F839919BD55EC00D091E1 /* LyricTextField.swift in Sources */,
+				A73F83AF19BD6A0C00D091E1 /* LRCArray.swift in Sources */,
+				A79F19AB19BCC6BF00A32155 /* LSLyricsCache.m in Sources */,
+				A71097A419BCADBA0034FE88 /* AppDelegate.swift in Sources */,
+				A7B8722619BEA78E0091E37A /* NSAppleEventDescriptor+Object.m in Sources */,
+				A7B8722819BEA78E0091E37A /* NSAppleEventDescriptor+String.m in Sources */,
+				A71097A219BCADBA0034FE88 /* main.swift in Sources */,
+				A7B8722219BEA78E0091E37A /* NSAppleEventDescriptor+Null.m in Sources */,
+				A7B8722A19BEA78E0091E37A /* NSAppleScript+Handler.m in Sources */,
+				A71097C119BCB2480034FE88 /* OverlayWindow.m in Sources */,
+				A79F19A519BCC6AC00A32155 /* Md5.m in Sources */,
+				A7B8722419BEA78E0091E37A /* NSAppleEventDescriptor+Number.m in Sources */,
+				A7B8722019BEA78E0091E37A /* NSAppleEventDescriptor+Array.m in Sources */,
+				A79F19AE19BCC6C800A32155 /* LSKasaGetter.m in Sources */,
+				A71097C319BCB3FE0034FE88 /* AppData.swift in Sources */,
+				A71097C919BCC1380034FE88 /* NSColor+CGColor.swift in Sources */,
+				A79F19A819BCC6B700A32155 /* LSiTunesConnection.m in Sources */,
+				A71097C519BCB9A10034FE88 /* MainWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71097AA19BCADBA0034FE88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71097B519BCADBA0034FE88 /* Kasa_swiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A71097B019BCADBA0034FE88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A710979B19BCADBA0034FE88 /* Kasa.swift */;
+			targetProxy = A71097AF19BCADBA0034FE88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A71097A719BCADBA0034FE88 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A71097A819BCADBA0034FE88 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A71097B619BCADBA0034FE88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A71097B719BCADBA0034FE88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A71097B919BCADBA0034FE88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				INFOPLIST_FILE = Kasa.swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Kasa.swift/Kasa.swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A71097BA19BCADBA0034FE88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				INFOPLIST_FILE = Kasa.swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Kasa.swift/Kasa.swift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		A71097BC19BCADBA0034FE88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Kasa.swiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kasa.swift.app/Contents/MacOS/Kasa.swift";
+			};
+			name = Debug;
+		};
+		A71097BD19BCADBA0034FE88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Kasa.swiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kasa.swift.app/Contents/MacOS/Kasa.swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A710979719BCADB90034FE88 /* Build configuration list for PBXProject "Kasa.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71097B619BCADBA0034FE88 /* Debug */,
+				A71097B719BCADBA0034FE88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A71097B819BCADBA0034FE88 /* Build configuration list for PBXNativeTarget "Kasa.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71097B919BCADBA0034FE88 /* Debug */,
+				A71097BA19BCADBA0034FE88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A71097BB19BCADBA0034FE88 /* Build configuration list for PBXNativeTarget "Kasa.swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71097BC19BCADBA0034FE88 /* Debug */,
+				A71097BD19BCADBA0034FE88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A710979419BCADB90034FE88 /* Project object */;
+}
