@@ -33,6 +33,8 @@
 		A7B8722619BEA78E0091E37A /* NSAppleEventDescriptor+Object.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8721319BEA78E0091E37A /* NSAppleEventDescriptor+Object.m */; };
 		A7B8722819BEA78E0091E37A /* NSAppleEventDescriptor+String.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8721719BEA78E0091E37A /* NSAppleEventDescriptor+String.m */; };
 		A7B8722A19BEA78E0091E37A /* NSAppleScript+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8721B19BEA78E0091E37A /* NSAppleScript+Handler.m */; };
+		AEB1B38057838BE4E34AFC15 /* Pods_Kasa_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092BAF5BD12BE0839C40E73 /* Pods_Kasa_swiftTests.framework */; };
+		F93E1EC12E2C93D03E36B2A1 /* Pods_Kasa_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F1940F2A32E4CA8B7F4B0C /* Pods_Kasa_swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		190486B61D99BC293E592AD2 /* Pods-Kasa.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kasa.swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kasa.swift/Pods-Kasa.swift.debug.xcconfig"; sourceTree = "<group>"; };
+		3E111BE6A930D29CC850F322 /* Pods-Kasa.swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kasa.swiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kasa.swiftTests/Pods-Kasa.swiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		42F1940F2A32E4CA8B7F4B0C /* Pods_Kasa_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kasa_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		713A4332718A65081EBE4C0C /* Pods-Kasa.swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kasa.swiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kasa.swiftTests/Pods-Kasa.swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A710979C19BCADBA0034FE88 /* Kasa.swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kasa.swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71097A019BCADBA0034FE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A71097A319BCADBA0034FE88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +90,8 @@
 		A7B8721719BEA78E0091E37A /* NSAppleEventDescriptor+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleEventDescriptor+String.m"; sourceTree = "<group>"; };
 		A7B8721A19BEA78E0091E37A /* NSAppleScript+Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAppleScript+Handler.h"; sourceTree = "<group>"; };
 		A7B8721B19BEA78E0091E37A /* NSAppleScript+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleScript+Handler.m"; sourceTree = "<group>"; };
+		B75CC25E843C38B6A81807E7 /* Pods-Kasa.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kasa.swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kasa.swift/Pods-Kasa.swift.release.xcconfig"; sourceTree = "<group>"; };
+		C092BAF5BD12BE0839C40E73 /* Pods_Kasa_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kasa_swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 				A79F19BA19BCCBFD00A32155 /* AppKit.framework in Frameworks */,
 				A79F19B819BCCBEE00A32155 /* Cocoa.framework in Frameworks */,
 				A79F19B319BCC89500A32155 /* Quartz.framework in Frameworks */,
+				F93E1EC12E2C93D03E36B2A1 /* Pods_Kasa_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,18 +113,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB1B38057838BE4E34AFC15 /* Pods_Kasa_swiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		056400BE1530839A1BA60DF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42F1940F2A32E4CA8B7F4B0C /* Pods_Kasa_swift.framework */,
+				C092BAF5BD12BE0839C40E73 /* Pods_Kasa_swiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A710979319BCADB90034FE88 = {
 			isa = PBXGroup;
 			children = (
 				A710979E19BCADBA0034FE88 /* Kasa.swift */,
 				A71097B119BCADBA0034FE88 /* Kasa.swiftTests */,
 				A710979D19BCADBA0034FE88 /* Products */,
+				DBBB85D6E68B61E776A040E8 /* Pods */,
+				056400BE1530839A1BA60DF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,6 +231,17 @@
 			name = AppleScriptToolkit;
 			sourceTree = "<group>";
 		};
+		DBBB85D6E68B61E776A040E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				190486B61D99BC293E592AD2 /* Pods-Kasa.swift.debug.xcconfig */,
+				B75CC25E843C38B6A81807E7 /* Pods-Kasa.swift.release.xcconfig */,
+				713A4332718A65081EBE4C0C /* Pods-Kasa.swiftTests.debug.xcconfig */,
+				3E111BE6A930D29CC850F322 /* Pods-Kasa.swiftTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,9 +249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A71097B819BCADBA0034FE88 /* Build configuration list for PBXNativeTarget "Kasa.swift" */;
 			buildPhases = (
+				5D70FEE1D5DB61EB137B9A84 /* Check Pods Manifest.lock */,
 				A710979819BCADBA0034FE88 /* Sources */,
 				A710979919BCADBA0034FE88 /* Frameworks */,
 				A710979A19BCADBA0034FE88 /* Resources */,
+				27531B1E9840E1A0B6CEC570 /* Embed Pods Frameworks */,
+				0B620D6DD67B9B982FE8B78B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,9 +269,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A71097BB19BCADBA0034FE88 /* Build configuration list for PBXNativeTarget "Kasa.swiftTests" */;
 			buildPhases = (
+				9D7B8DCB91FB8BE13A43CEBC /* Check Pods Manifest.lock */,
 				A71097AA19BCADBA0034FE88 /* Sources */,
 				A71097AB19BCADBA0034FE88 /* Frameworks */,
 				A71097AC19BCADBA0034FE88 /* Resources */,
+				4A1A85197E98747997E12626 /* Embed Pods Frameworks */,
+				E7CE8656B0CD65D2A2E83B8B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,6 +346,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B620D6DD67B9B982FE8B78B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kasa.swift/Pods-Kasa.swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27531B1E9840E1A0B6CEC570 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kasa.swift/Pods-Kasa.swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A1A85197E98747997E12626 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kasa.swiftTests/Pods-Kasa.swiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D70FEE1D5DB61EB137B9A84 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D7B8DCB91FB8BE13A43CEBC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7CE8656B0CD65D2A2E83B8B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kasa.swiftTests/Pods-Kasa.swiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A710979819BCADBA0034FE88 /* Sources */ = {
@@ -441,6 +572,7 @@
 		};
 		A71097B919BCADBA0034FE88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 190486B61D99BC293E592AD2 /* Pods-Kasa.swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -463,6 +595,7 @@
 		};
 		A71097BA19BCADBA0034FE88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B75CC25E843C38B6A81807E7 /* Pods-Kasa.swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -484,6 +617,7 @@
 		};
 		A71097BC19BCADBA0034FE88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 713A4332718A65081EBE4C0C /* Pods-Kasa.swiftTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -505,6 +639,7 @@
 		};
 		A71097BD19BCADBA0034FE88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E111BE6A930D29CC850F322 /* Pods-Kasa.swiftTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
