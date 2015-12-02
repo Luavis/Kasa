@@ -5,6 +5,5 @@
 {
     NSPoint initialLocation;
 }
-@property (assign) IBOutlet NSTextField *informationLabel;
 
 @end

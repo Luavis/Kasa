@@ -23,6 +23,9 @@ pascal OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEven
 pascal OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,void *userData)
 {
     OverlayWindow *window = (OverlayWindow *)userData;
+
+    window.ignoresMouseEvents = !window.ignoresMouseEvents;
+
     return noErr;
 }
 
@@ -56,10 +59,12 @@ pascal OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEven
                                                             userInfo:nil];
     [[self contentView] addTrackingArea:trackingArea];
     [trackingArea release];
+
     if ( NSPointInRect([NSEvent mouseLocation],[self frame]) )
         [self mouseEntered:nil];
     else
         [self mouseExited:nil];
+
         // Start with vertical movement
     
         // Now lets go setup the hotkey handler, using Carbon APIs (there is no ObjC Cocoa HotKey API as of 10.7)
@@ -110,27 +115,13 @@ pascal OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEven
 // If the mouse enters a window, go make sure we fade in
 - (void)mouseEntered:(NSEvent *)theEvent
 {
-        // Use Core Animation to fade in both windows.
-    [self.informationLabel setHidden:NO];
-    [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
-        [[self.informationLabel animator] setAlphaValue:1.0];
-    } completionHandler:^
-     {
-         [NSObject cancelPreviousPerformRequestsWithTarget:self];
-     }];
-    
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
 }
 
 // If the mouse exits a window, go make sure we fade out
 - (void)mouseExited:(NSEvent *)theEvent
 {
-    [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
-        [[self.informationLabel animator] setAlphaValue:0.0];
-    } completionHandler:^
-     {
-         [NSObject cancelPreviousPerformRequestsWithTarget:self];
-         [self.informationLabel setHidden:YES];
-     }];
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
 }
 
 - (void)mouseDown:(NSEvent *)theEvent

@@ -16,6 +16,9 @@
 		A71097C719BCBA8E0034FE88 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A71097C619BCBA8E0034FE88 /* MainWindow.xib */; };
 		A71097C919BCC1380034FE88 /* NSColor+CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097C819BCC1370034FE88 /* NSColor+CGColor.swift */; };
 		A7393ED71C0F284300C769F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7393ED61C0F284300C769F7 /* main.swift */; };
+		A7393ED91C0F2C8000C769F7 /* LyricWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7393ED81C0F2C8000C769F7 /* LyricWindow.swift */; };
+		A7393EDB1C0F2F7E00C769F7 /* LyricWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7393EDA1C0F2F7E00C769F7 /* LyricWindowController.swift */; };
+		A7393EDD1C0F305900C769F7 /* ShadowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7393EDC1C0F305900C769F7 /* ShadowLabel.swift */; };
 		A79F19B319BCC89500A32155 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79F19B219BCC89500A32155 /* Quartz.framework */; };
 		A79F19B819BCCBEE00A32155 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79F19B719BCCBEE00A32155 /* Cocoa.framework */; };
 		A79F19BA19BCCBFD00A32155 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79F19B919BCCBFD00A32155 /* AppKit.framework */; };
@@ -58,6 +61,9 @@
 		A71097C619BCBA8E0034FE88 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		A71097C819BCC1370034FE88 /* NSColor+CGColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+CGColor.swift"; sourceTree = "<group>"; };
 		A7393ED61C0F284300C769F7 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A7393ED81C0F2C8000C769F7 /* LyricWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricWindow.swift; sourceTree = "<group>"; };
+		A7393EDA1C0F2F7E00C769F7 /* LyricWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricWindowController.swift; sourceTree = "<group>"; };
+		A7393EDC1C0F305900C769F7 /* ShadowLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowLabel.swift; sourceTree = "<group>"; };
 		A79F19B219BCC89500A32155 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		A79F19B719BCCBEE00A32155 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A79F19B919BCCBFD00A32155 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -131,6 +137,9 @@
 				A71097C219BCB3FE0034FE88 /* AppData.swift */,
 				A71097BF19BCB2480034FE88 /* OverlayWindow.h */,
 				A71097C019BCB2480034FE88 /* OverlayWindow.m */,
+				A7393ED81C0F2C8000C769F7 /* LyricWindow.swift */,
+				A7393EDC1C0F305900C769F7 /* ShadowLabel.swift */,
+				A7393EDA1C0F2F7E00C769F7 /* LyricWindowController.swift */,
 				A71097A519BCADBA0034FE88 /* Images.xcassets */,
 				A71097A719BCADBA0034FE88 /* MainMenu.xib */,
 				A71097C619BCBA8E0034FE88 /* MainWindow.xib */,
@@ -307,11 +316,14 @@
 			files = (
 				A71097A419BCADBA0034FE88 /* AppDelegate.swift in Sources */,
 				A7B8722619BEA78E0091E37A /* NSAppleEventDescriptor+Object.m in Sources */,
+				A7393EDD1C0F305900C769F7 /* ShadowLabel.swift in Sources */,
+				A7393EDB1C0F2F7E00C769F7 /* LyricWindowController.swift in Sources */,
 				A7B8722819BEA78E0091E37A /* NSAppleEventDescriptor+String.m in Sources */,
 				A7B8722219BEA78E0091E37A /* NSAppleEventDescriptor+Null.m in Sources */,
 				A7B8722A19BEA78E0091E37A /* NSAppleScript+Handler.m in Sources */,
 				A71097C119BCB2480034FE88 /* OverlayWindow.m in Sources */,
 				A7B8722419BEA78E0091E37A /* NSAppleEventDescriptor+Number.m in Sources */,
+				A7393ED91C0F2C8000C769F7 /* LyricWindow.swift in Sources */,
 				A7393ED71C0F284300C769F7 /* main.swift in Sources */,
 				A7B8722019BEA78E0091E37A /* NSAppleEventDescriptor+Array.m in Sources */,
 				A71097C319BCB3FE0034FE88 /* AppData.swift in Sources */,
@@ -384,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -421,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
