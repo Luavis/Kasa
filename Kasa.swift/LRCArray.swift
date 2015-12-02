@@ -25,8 +25,8 @@ struct LRCComponent {
 extension String {
   subscript (r: Range<Int>) -> String {
     get {
-      let startIndex = advance(self.startIndex, r.startIndex)
-      let endIndex = advance(startIndex, (r.endIndex - r.startIndex))
+      let startIndex = self.startIndex.advancedBy(r.startIndex)
+      let endIndex = startIndex.advancedBy((r.endIndex - r.startIndex))
       
       return self[Range(start: startIndex, end: endIndex)]
     }
@@ -55,13 +55,19 @@ class LRCArray : NSObject {
     var lrcComponentArray: [LRCComponent] = [LRCComponent](count: size, repeatedValue: LRCComponent(lyric: "", startPoint: 0.0))
     
     
-    for (index, elem:String) in enumerate(segs) {
+    for (index, elem): (Int, String) in segs.enumerate() {
       var error:NSError? = nil
-      println(elem)
-      let regexp = NSRegularExpression.regularExpressionWithPattern("\\[([0-9]+):([0-9\\.]+)\\](.*)", options: .CaseInsensitive, error: &error)
+      print(elem)
+      let regexp: NSRegularExpression?
+      do {
+        regexp = try NSRegularExpression.regularExpressionWithPattern("\\[([0-9]+):([0-9\\.]+)\\](.*)", options: .CaseInsensitive)
+      } catch var error1 as NSError {
+        error = error1
+        regexp = nil
+      }
       
       if let error = error {
-        println("Error \(error)")
+        print("Error \(error)")
         return nil
       }
       
@@ -77,7 +83,7 @@ class LRCArray : NSObject {
           let secRange:NSRange = match.rangeAtIndex(2)
           let lyricRange:NSRange = match.rangeAtIndex(3)
           
-          let opMin:Int? = elem[minRange.location...minRange.location + minRange.length - 1].toInt()
+          let opMin:Int? = Int(elem[minRange.location...minRange.location + minRange.length - 1])
           let opSec:Double? = elem[secRange.location...secRange.location + secRange.length - 1].toDouble()
           
           if let min = opMin {
@@ -108,7 +114,7 @@ class LRCArray : NSObject {
       }
     }
     
-    println(lrcComponentArray[0])
+    print(lrcComponentArray[0])
     
     return LRCArray(lrcComponentArray);
   }
@@ -130,7 +136,7 @@ class LRCArray : NSObject {
       
       var append_lyric:String = lrcs[i].lyric
       var j = 1
-      println(i)
+      print(i)
       
       while j < (size) {
         if lrcs[i].startPoint == 0 || countElements(lrcs[i].lyric) == 0 {
@@ -168,7 +174,7 @@ class LRCArray : NSObject {
             
             self.recentIndexFirst = i - 1
             self.recentIndexSecond = i
-            var com = self.lrcArray[i - 1]
+            let com = self.lrcArray[i - 1]
             
             return com
           }
@@ -187,7 +193,7 @@ class LRCArray : NSObject {
             
             self.recentIndexFirst = i - 1
             self.recentIndexSecond = i
-            var com = self.lrcArray[i - 1]
+            let com = self.lrcArray[i - 1]
             
             return com
           }

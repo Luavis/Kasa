@@ -10,10 +10,6 @@ import Foundation
 
 
 class LyricTextField: NSTextField, LSiTunesConnectionDelegate {
-
-    required init(coder: NSCoder!) {
-      super.init(coder : coder)
-    }
     
     var height:CGFloat = 0.0 // = self.frame.size.height;
   
@@ -34,8 +30,8 @@ class LyricTextField: NSTextField, LSiTunesConnectionDelegate {
         dispatch_async(dispatch_queue_create("KasaDownload", nil), {
           let dict:NSDictionary? = LSKasaGetter.synchronizedDownloadWithURL(location)
           if let ndict = dict as? Dictionary<NSString, AnyObject> {
-            let lyric: String = ndict["strLyric"] as NSString
-            if countElements(lyric) == 0 {
+            let lyric: String = ndict["strLyric"] as! String
+            if lyric.characters.count == 0 {
               self.refresh("가사가 없습니다.")
             }
             else {
@@ -45,14 +41,14 @@ class LyricTextField: NSTextField, LSiTunesConnectionDelegate {
               
               if let lrca = lrca {
                 dispatch_async(dispatch_queue_create("KasaUpdater", nil)) {
-                  let theScript:NSAppleScript = NSAppleScript(source: "tell application \"iTunes\" to if running then\nreturn player position\nend if")
+                  let theScript:NSAppleScript! = NSAppleScript(source: "tell application \"iTunes\" to if running then\nreturn player position\nend if")
                   let errorDict:AutoreleasingUnsafeMutablePointer<NSDictionary?> = nil
                   self.stop = false
                   
                   while true {
                     let ret:NSAppleEventDescriptor? = theScript.executeAndReturnError(errorDict)
                     if let ret = ret {
-                      let position:Double = ret.doubleValue()
+                      let position:Double = ret.doubleValue
                       let component:LRCComponent? = lrca[position]
                       if let component = component {
                         self.refresh(component.lyric)
@@ -74,7 +70,7 @@ class LyricTextField: NSTextField, LSiTunesConnectionDelegate {
               
               let delayInSeconds:UInt64 = 5
               
-              var popTime:dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(3.0 * Double(NSEC_PER_SEC)));
+              let popTime:dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(3.0 * Double(NSEC_PER_SEC)));
               
               dispatch_after(popTime, dispatch_get_main_queue()) {
                 //                  [self musicChanged:location];

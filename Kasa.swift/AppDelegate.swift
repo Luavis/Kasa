@@ -21,7 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.window = AppData.instance.mainWindowController?.window
         
         AppData.instance.mainWindowController?.showWindow(nil)
-        AppData.instance.mainWindowController?.window.makeKeyAndOrderFront(nil)
+        AppData.instance.mainWindowController?.window!.makeKeyAndOrderFront(nil)
     }
 
     func applicationWillTerminate(aNotification: NSNotification?) {

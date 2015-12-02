@@ -10,29 +10,29 @@
 	<string>Kasa.swift</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>46F549E9A70064D511EC02331007EA0FD9D0DC40</key>
+		<key>76E3D40A233D4FE09B68F5391C4761E93C672B43</key>
 		<string>https://github.com/Luavis/Kasa.swift</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Kasa.swift/Kasa.swift.xcodeproj</string>
+	<string>Kasa.swift.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>46F549E9A70064D511EC02331007EA0FD9D0DC40</key>
-		<string>../../..</string>
+		<key>76E3D40A233D4FE09B68F5391C4761E93C672B43</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Luavis/Kasa.swift</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>46F549E9A70064D511EC02331007EA0FD9D0DC40</string>
+	<string>76E3D40A233D4FE09B68F5391C4761E93C672B43</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>46F549E9A70064D511EC02331007EA0FD9D0DC40</string>
+			<string>76E3D40A233D4FE09B68F5391C4761E93C672B43</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Kasa.swift</string>
 		</dict>

@@ -10,7 +10,8 @@ import Foundation
 import Quartz
 
 class MainWindowController: NSWindowController {
-    override init() {
+
+    init() {
         super.init(window: nil)
         
         /* Load window from xib file */
@@ -21,10 +22,10 @@ class MainWindowController: NSWindowController {
     @IBOutlet weak var lyricView: LyricTextField!
     @IBOutlet weak var informationLabel: NSTextField!
 
-    required init(coder: NSCoder!) {
-        super.init(coder: coder)
+    required init(coder: NSCoder) {
+        super.init(coder: coder)!
     }
-    
+
     override func awakeFromNib() {
         self.lyricView.wantsLayer = true
         self.lyricView.layer?.backgroundColor = NSColor.clearColor().CGColor
@@ -42,14 +43,14 @@ class MainWindowController: NSWindowController {
         self.informationLabel.layer?.shadowRadius = 30.0
         
         // window init
-        self.window.backgroundColor = NSColor.blackColor().colorWithAlphaComponent(0.08)
-        var collectionBehavior:NSWindowCollectionBehavior = self.window.collectionBehavior
+        self.window!.backgroundColor = NSColor.blackColor().colorWithAlphaComponent(0.08)
+        var collectionBehavior:NSWindowCollectionBehavior = self.window!.collectionBehavior
         collectionBehavior |= .CanJoinAllSpaces
         self.window.collectionBehavior = collectionBehavior
         
         var popTime:dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(3.0 * Double(NSEC_PER_SEC)));
         dispatch_after(popTime, dispatch_get_main_queue()) { () -> Void in
-            NSAnimationContext.runAnimationGroup({ (context:NSAnimationContext!) -> Void in
+            NSAnimationContext.runAnimationGroup({ (context:NSAnimationContext) -> Void in
                 self.informationLabel.animator().alphaValue = 0.0
             }, completionHandler: { () -> Void in
                 NSObject.cancelPreviousPerformRequestsWithTarget(self)
