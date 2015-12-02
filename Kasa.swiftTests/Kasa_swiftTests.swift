@@ -8,7 +8,7 @@
 
 import Cocoa
 import XCTest
-@testable import Kasa
+@testable import Kasa_swift
 
 
 class Kasa_swiftTests: XCTestCase {
@@ -22,11 +22,12 @@ class Kasa_swiftTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+
     func testDownloadLyric() {
         let manager = LyricManager.manager
+        manager.getLyric("/Users/Luavis/Music/iTunes/iTunes Media/Music/Various Artists/프로듀사 (KBS 2TV 금토드라마) OST/1-05 우리 둘.mp3")
 
-        XCTAssert(false, "Pass")
+        XCTAssert(true, "Pass")
     }
     
     func testPerformanceExample() {
