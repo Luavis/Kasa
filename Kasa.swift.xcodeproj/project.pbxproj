@@ -7,22 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A71097A219BCADBA0034FE88 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097A119BCADBA0034FE88 /* main.swift */; };
 		A71097A419BCADBA0034FE88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097A319BCADBA0034FE88 /* AppDelegate.swift */; };
 		A71097A619BCADBA0034FE88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71097A519BCADBA0034FE88 /* Images.xcassets */; };
 		A71097A919BCADBA0034FE88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A71097A719BCADBA0034FE88 /* MainMenu.xib */; };
 		A71097B519BCADBA0034FE88 /* Kasa_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097B419BCADBA0034FE88 /* Kasa_swiftTests.swift */; };
 		A71097C119BCB2480034FE88 /* OverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A71097C019BCB2480034FE88 /* OverlayWindow.m */; };
 		A71097C319BCB3FE0034FE88 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097C219BCB3FE0034FE88 /* AppData.swift */; };
-		A71097C519BCB9A10034FE88 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097C419BCB9A10034FE88 /* MainWindowController.swift */; };
 		A71097C719BCBA8E0034FE88 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A71097C619BCBA8E0034FE88 /* MainWindow.xib */; };
 		A71097C919BCC1380034FE88 /* NSColor+CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097C819BCC1370034FE88 /* NSColor+CGColor.swift */; };
-		A73F839919BD55EC00D091E1 /* LyricTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73F839819BD55EC00D091E1 /* LyricTextField.swift */; };
-		A73F83AF19BD6A0C00D091E1 /* LRCArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73F83AE19BD6A0C00D091E1 /* LRCArray.swift */; };
-		A79F19A519BCC6AC00A32155 /* Md5.m in Sources */ = {isa = PBXBuildFile; fileRef = A79F19A419BCC6AC00A32155 /* Md5.m */; };
-		A79F19A819BCC6B700A32155 /* LSiTunesConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A79F19A719BCC6B700A32155 /* LSiTunesConnection.m */; };
-		A79F19AB19BCC6BF00A32155 /* LSLyricsCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A79F19AA19BCC6BF00A32155 /* LSLyricsCache.m */; };
-		A79F19AE19BCC6C800A32155 /* LSKasaGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = A79F19AD19BCC6C800A32155 /* LSKasaGetter.m */; };
+		A7393ED71C0F284300C769F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7393ED61C0F284300C769F7 /* main.swift */; };
 		A79F19B319BCC89500A32155 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79F19B219BCC89500A32155 /* Quartz.framework */; };
 		A79F19B819BCCBEE00A32155 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79F19B719BCCBEE00A32155 /* Cocoa.framework */; };
 		A79F19BA19BCCBFD00A32155 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79F19B919BCCBFD00A32155 /* AppKit.framework */; };
@@ -52,7 +45,6 @@
 /* Begin PBXFileReference section */
 		A710979C19BCADBA0034FE88 /* Kasa.swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kasa.swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71097A019BCADBA0034FE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A71097A119BCADBA0034FE88 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A71097A319BCADBA0034FE88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A71097A519BCADBA0034FE88 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A71097A819BCADBA0034FE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -63,20 +55,9 @@
 		A71097BF19BCB2480034FE88 /* OverlayWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayWindow.h; sourceTree = "<group>"; };
 		A71097C019BCB2480034FE88 /* OverlayWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayWindow.m; sourceTree = "<group>"; };
 		A71097C219BCB3FE0034FE88 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
-		A71097C419BCB9A10034FE88 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		A71097C619BCBA8E0034FE88 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		A71097C819BCC1370034FE88 /* NSColor+CGColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+CGColor.swift"; sourceTree = "<group>"; };
-		A73F839819BD55EC00D091E1 /* LyricTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricTextField.swift; sourceTree = "<group>"; };
-		A73F839A19BD572C00D091E1 /* swift_test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = swift_test.playground; sourceTree = "<group>"; };
-		A73F83AE19BD6A0C00D091E1 /* LRCArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRCArray.swift; sourceTree = "<group>"; };
-		A79F19A319BCC6AC00A32155 /* Md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Md5.h; sourceTree = "<group>"; };
-		A79F19A419BCC6AC00A32155 /* Md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Md5.m; sourceTree = "<group>"; };
-		A79F19A619BCC6B700A32155 /* LSiTunesConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSiTunesConnection.h; sourceTree = "<group>"; };
-		A79F19A719BCC6B700A32155 /* LSiTunesConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSiTunesConnection.m; sourceTree = "<group>"; };
-		A79F19A919BCC6BF00A32155 /* LSLyricsCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLyricsCache.h; sourceTree = "<group>"; };
-		A79F19AA19BCC6BF00A32155 /* LSLyricsCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLyricsCache.m; sourceTree = "<group>"; };
-		A79F19AC19BCC6C800A32155 /* LSKasaGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSKasaGetter.h; sourceTree = "<group>"; };
-		A79F19AD19BCC6C800A32155 /* LSKasaGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSKasaGetter.m; sourceTree = "<group>"; };
+		A7393ED61C0F284300C769F7 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A79F19B219BCC89500A32155 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		A79F19B719BCCBEE00A32155 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A79F19B919BCCBFD00A32155 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -150,20 +131,8 @@
 				A71097C219BCB3FE0034FE88 /* AppData.swift */,
 				A71097BF19BCB2480034FE88 /* OverlayWindow.h */,
 				A71097C019BCB2480034FE88 /* OverlayWindow.m */,
-				A79F19A319BCC6AC00A32155 /* Md5.h */,
-				A79F19A419BCC6AC00A32155 /* Md5.m */,
-				A79F19A619BCC6B700A32155 /* LSiTunesConnection.h */,
-				A79F19A919BCC6BF00A32155 /* LSLyricsCache.h */,
-				A79F19A719BCC6B700A32155 /* LSiTunesConnection.m */,
-				A79F19AA19BCC6BF00A32155 /* LSLyricsCache.m */,
-				A79F19AC19BCC6C800A32155 /* LSKasaGetter.h */,
-				A79F19AD19BCC6C800A32155 /* LSKasaGetter.m */,
-				A73F839819BD55EC00D091E1 /* LyricTextField.swift */,
-				A73F839A19BD572C00D091E1 /* swift_test.playground */,
-				A73F83AE19BD6A0C00D091E1 /* LRCArray.swift */,
 				A71097A519BCADBA0034FE88 /* Images.xcassets */,
 				A71097A719BCADBA0034FE88 /* MainMenu.xib */,
-				A71097C419BCB9A10034FE88 /* MainWindowController.swift */,
 				A71097C619BCBA8E0034FE88 /* MainWindow.xib */,
 				A7B8720419BEA78E0091E37A /* LICENSE */,
 				A7B8722C19BEA7A80091E37A /* AppleScriptToolkit */,
@@ -176,8 +145,8 @@
 		A710979F19BCADBA0034FE88 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A7393ED61C0F284300C769F7 /* main.swift */,
 				A71097A019BCADBA0034FE88 /* Info.plist */,
-				A71097A119BCADBA0034FE88 /* main.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -278,7 +247,7 @@
 			attributes = {
 				LastSwiftMigration = 0710;
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Luavis;
 				TargetAttributes = {
 					A710979B19BCADBA0034FE88 = {
@@ -336,24 +305,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A73F839919BD55EC00D091E1 /* LyricTextField.swift in Sources */,
-				A73F83AF19BD6A0C00D091E1 /* LRCArray.swift in Sources */,
-				A79F19AB19BCC6BF00A32155 /* LSLyricsCache.m in Sources */,
 				A71097A419BCADBA0034FE88 /* AppDelegate.swift in Sources */,
 				A7B8722619BEA78E0091E37A /* NSAppleEventDescriptor+Object.m in Sources */,
 				A7B8722819BEA78E0091E37A /* NSAppleEventDescriptor+String.m in Sources */,
-				A71097A219BCADBA0034FE88 /* main.swift in Sources */,
 				A7B8722219BEA78E0091E37A /* NSAppleEventDescriptor+Null.m in Sources */,
 				A7B8722A19BEA78E0091E37A /* NSAppleScript+Handler.m in Sources */,
 				A71097C119BCB2480034FE88 /* OverlayWindow.m in Sources */,
-				A79F19A519BCC6AC00A32155 /* Md5.m in Sources */,
 				A7B8722419BEA78E0091E37A /* NSAppleEventDescriptor+Number.m in Sources */,
+				A7393ED71C0F284300C769F7 /* main.swift in Sources */,
 				A7B8722019BEA78E0091E37A /* NSAppleEventDescriptor+Array.m in Sources */,
-				A79F19AE19BCC6C800A32155 /* LSKasaGetter.m in Sources */,
 				A71097C319BCB3FE0034FE88 /* AppData.swift in Sources */,
 				A71097C919BCC1380034FE88 /* NSColor+CGColor.swift in Sources */,
-				A79F19A819BCC6B700A32155 /* LSiTunesConnection.m in Sources */,
-				A71097C519BCB9A10034FE88 /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +369,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -478,6 +441,7 @@
 				INFOPLIST_FILE = Kasa.swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luavis.Kasa.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "Kasa.swift/Kasa.swift-Bridging-Header.h";
@@ -499,6 +463,7 @@
 				INFOPLIST_FILE = Kasa.swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luavis.Kasa.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "Kasa.swift/Kasa.swift-Bridging-Header.h";
@@ -520,6 +485,7 @@
 				);
 				INFOPLIST_FILE = Kasa.swiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luavis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kasa.swift.app/Contents/MacOS/Kasa.swift";
 			};
@@ -536,6 +502,7 @@
 				);
 				INFOPLIST_FILE = Kasa.swiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luavis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kasa.swift.app/Contents/MacOS/Kasa.swift";
 			};

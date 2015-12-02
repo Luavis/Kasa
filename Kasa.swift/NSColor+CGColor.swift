@@ -7,18 +7,18 @@
 //
 
 import Foundation
-
-extension NSColor {
-    func CGColor() -> CGColorRef? {
-        let numberOfComponents: NSInteger = self.numberOfComponents
-        let components: UnsafeMutablePointer<CGFloat> = UnsafeMutablePointer<CGFloat>(calloc(UInt(numberOfComponents), UInt(sizeof(CGFloat))))
-        var colorSpace:CGColorSpaceRef = self.colorSpace.CGColorSpace;
-        
-        self.getComponents(components)
-        return CGColorCreate(colorSpace, components)
-    }
-    
-    class func colorWithWithCGColor(CGColor: CGColorRef!) -> NSColor {
-        return NSColor.colorWithWithCGColor(CGColor)
-    }
-}
+//
+//extension NSColor {
+//    func CGColor() -> CGColorRef? {
+//        let numberOfComponents: NSInteger = self.numberOfComponents
+//        let components: UnsafeMutablePointer<CGFloat> = UnsafeMutablePointer<CGFloat>(calloc(UInt(numberOfComponents), UInt(sizeof(CGFloat))))
+//        var colorSpace:CGColorSpaceRef = self.colorSpace.CGColorSpace;
+//        
+//        self.getComponents(components)
+//        return CGColorCreate(colorSpace, components)
+//    }
+//    
+//    class func colorWithWithCGColor(CGColor: CGColorRef!) -> NSColor {
+//        return NSColor.colorWithWithCGColor(CGColor)
+//    }
+//}

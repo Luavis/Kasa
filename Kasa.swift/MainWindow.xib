@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9060" systemVersion="15C47a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6206.9"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9060"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="Kasa_swift" customModuleProvider="target">
@@ -17,7 +18,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="653" height="157"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1080"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" id="en7-ac-LPC">
                 <rect key="frame" x="0.0" y="0.0" width="653" height="157"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -27,6 +28,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="117" id="1j8-oe-an6"/>
                         </constraints>
+                        <animations/>
                         <textFieldCell key="cell" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" drawsBackground="YES" id="jmc-n4-w3f">
                             <font key="font" size="24" name="AppleSDGothicNeo-ExtraBold"/>
                             <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
@@ -38,6 +40,7 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="233" id="xia-Yr-OjC"/>
                         </constraints>
+                        <animations/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="⇧⌘↵로 화면 이동하기" id="aK0-Wo-q4a">
                             <font key="font" size="13" name="AppleSDGothicNeo-Regular"/>
                             <color key="textColor" red="0.99280995419999996" green="0.95332662050000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -53,11 +56,12 @@
                     <constraint firstItem="5vR-zt-sN2" firstAttribute="leading" secondItem="en7-ac-LPC" secondAttribute="leading" constant="20" symbolic="YES" id="tkV-eK-EfV"/>
                     <constraint firstItem="1el-e5-l6x" firstAttribute="bottom" secondItem="en7-ac-LPC" secondAttribute="bottom" id="xdI-Kr-oy3"/>
                 </constraints>
+                <animations/>
             </view>
             <connections>
                 <outlet property="informationLabel" destination="1el-e5-l6x" id="irA-Ud-JzZ"/>
             </connections>
-            <point key="canvasLocation" x="612.5" y="222.5"/>
+            <point key="canvasLocation" x="275.5" y="174.5"/>
         </window>
     </objects>
 </document>
