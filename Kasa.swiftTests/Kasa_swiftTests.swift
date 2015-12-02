@@ -8,6 +8,8 @@
 
 import Cocoa
 import XCTest
+@testable import Kasa
+
 
 class Kasa_swiftTests: XCTestCase {
     
@@ -21,9 +23,10 @@ class Kasa_swiftTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testDownloadLyric() {
+        let manager = LyricManager.manager
+
+        XCTAssert(false, "Pass")
     }
     
     func testPerformanceExample() {

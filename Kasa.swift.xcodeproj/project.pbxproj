@@ -33,6 +33,7 @@
 		A7B8722619BEA78E0091E37A /* NSAppleEventDescriptor+Object.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8721319BEA78E0091E37A /* NSAppleEventDescriptor+Object.m */; };
 		A7B8722819BEA78E0091E37A /* NSAppleEventDescriptor+String.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8721719BEA78E0091E37A /* NSAppleEventDescriptor+String.m */; };
 		A7B8722A19BEA78E0091E37A /* NSAppleScript+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8721B19BEA78E0091E37A /* NSAppleScript+Handler.m */; };
+		A7F7D52F1C0F43E600E0AC0F /* LyricManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F7D52E1C0F43E600E0AC0F /* LyricManager.swift */; };
 		AEB1B38057838BE4E34AFC15 /* Pods_Kasa_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092BAF5BD12BE0839C40E73 /* Pods_Kasa_swiftTests.framework */; };
 		F93E1EC12E2C93D03E36B2A1 /* Pods_Kasa_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F1940F2A32E4CA8B7F4B0C /* Pods_Kasa_swift.framework */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		A7B8721719BEA78E0091E37A /* NSAppleEventDescriptor+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleEventDescriptor+String.m"; sourceTree = "<group>"; };
 		A7B8721A19BEA78E0091E37A /* NSAppleScript+Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAppleScript+Handler.h"; sourceTree = "<group>"; };
 		A7B8721B19BEA78E0091E37A /* NSAppleScript+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleScript+Handler.m"; sourceTree = "<group>"; };
+		A7F7D52E1C0F43E600E0AC0F /* LyricManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricManager.swift; sourceTree = "<group>"; };
 		B75CC25E843C38B6A81807E7 /* Pods-Kasa.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kasa.swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kasa.swift/Pods-Kasa.swift.release.xcconfig"; sourceTree = "<group>"; };
 		C092BAF5BD12BE0839C40E73 /* Pods_Kasa_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kasa_swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,7 +134,7 @@
 		A710979319BCADB90034FE88 = {
 			isa = PBXGroup;
 			children = (
-				A710979E19BCADBA0034FE88 /* Kasa.swift */,
+				A710979E19BCADBA0034FE88 /* Kasa */,
 				A71097B119BCADBA0034FE88 /* Kasa.swiftTests */,
 				A710979D19BCADBA0034FE88 /* Products */,
 				DBBB85D6E68B61E776A040E8 /* Pods */,
@@ -149,7 +151,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A710979E19BCADBA0034FE88 /* Kasa.swift */ = {
+		A710979E19BCADBA0034FE88 /* Kasa */ = {
 			isa = PBXGroup;
 			children = (
 				A79F19C119BCCC3000A32155 /* Framework */,
@@ -158,6 +160,7 @@
 				A71097C219BCB3FE0034FE88 /* AppData.swift */,
 				A71097BF19BCB2480034FE88 /* OverlayWindow.h */,
 				A71097C019BCB2480034FE88 /* OverlayWindow.m */,
+				A7F7D52E1C0F43E600E0AC0F /* LyricManager.swift */,
 				A7393ED81C0F2C8000C769F7 /* LyricWindow.swift */,
 				A7393EDC1C0F305900C769F7 /* ShadowLabel.swift */,
 				A7393EDA1C0F2F7E00C769F7 /* LyricWindowController.swift */,
@@ -169,6 +172,7 @@
 				A710979F19BCADBA0034FE88 /* Supporting Files */,
 				A71097BE19BCB2470034FE88 /* Kasa.swift-Bridging-Header.h */,
 			);
+			name = Kasa;
 			path = Kasa.swift;
 			sourceTree = "<group>";
 		};
@@ -451,6 +455,7 @@
 				A7393EDB1C0F2F7E00C769F7 /* LyricWindowController.swift in Sources */,
 				A7B8722819BEA78E0091E37A /* NSAppleEventDescriptor+String.m in Sources */,
 				A7B8722219BEA78E0091E37A /* NSAppleEventDescriptor+Null.m in Sources */,
+				A7F7D52F1C0F43E600E0AC0F /* LyricManager.swift in Sources */,
 				A7B8722A19BEA78E0091E37A /* NSAppleScript+Handler.m in Sources */,
 				A71097C119BCB2480034FE88 /* OverlayWindow.m in Sources */,
 				A7B8722419BEA78E0091E37A /* NSAppleEventDescriptor+Number.m in Sources */,

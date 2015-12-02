@@ -5,9 +5,11 @@ use_frameworks!
 
 target 'Kasa.swift' do
     pod 'SwiftHTTP', '~> 1.0.2'
+    pod 'FileKit', '~> 2.0.0'
 end
 
 target 'Kasa.swiftTests' do
     pod 'SwiftHTTP', '~> 1.0.2'
+    pod 'FileKit', '~> 2.0.0'
 end
 
