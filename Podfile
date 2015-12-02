@@ -7,11 +7,10 @@ target 'Kasa.swift' do
     pod 'SwiftHTTP', '~> 1.0.2'
     pod 'FileKit', '~> 2.0.0'
     pod 'AEXML', '~> 2.0.1'
+    pod 'CryptoSwift', '~> 0.1.1'
 end
 
 target 'Kasa.swiftTests' do
-    pod 'SwiftHTTP', '~> 1.0.2'
-    pod 'FileKit', '~> 2.0.0'
-    pod 'AEXML', '~> 2.0.1'
+
 end
 

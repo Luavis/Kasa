@@ -25,9 +25,9 @@ class Kasa_swiftTests: XCTestCase {
 
     func testDownloadLyric() {
         let manager = LyricManager.manager
-        manager.getLyric("/Users/Luavis/Music/iTunes/iTunes Media/Music/Various Artists/프로듀사 (KBS 2TV 금토드라마) OST/1-05 우리 둘.mp3")
-
-        XCTAssert(true, "Pass")
+        let (suc, msg) = manager.id3Md5Hash("/Users/Luavis/Music/iTunes/iTunes Media/Music/Various Artists/프로듀사 (KBS 2TV 금토드라마) OST/1-05 우리 둘.mp3")
+        print(msg)
+        XCTAssert(suc, "Pass")
     }
     
     func testPerformanceExample() {
