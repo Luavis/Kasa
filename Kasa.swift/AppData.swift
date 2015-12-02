@@ -23,12 +23,4 @@ class AppData: NSObject {
     var exitAlpha:NSNumber = 1.0
     var isAlpha:Bool = false
     var cacheValidTime:NSNumber = 60 * 60 * 24
-    var mainWindowController:MainWindowController?
-
-//    override init() {
-//        self.enterAlpha = 1.0
-//        self.exitAlpha = 1.0
-//        self.isAlpha = false
-//        self.cacheValidTime =
-//    }
 }

@@ -2,10 +2,10 @@
 //  main.swift
 //  Kasa.swift
 //
-//  Created by Luavis on 2014. 9. 8..
-//  Copyright (c) 2014년 Luavis. All rights reserved.
+//  Created by Luavis Kang on 12/2/15.
+//  Copyright © 2015 Luavis. All rights reserved.
 //
 
 import Cocoa
 
-NSApplicationMain(Process.argc, C_ARGV)
+NSApplicationMain(Process.argc, Process.unsafeArgv)

@@ -12,19 +12,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                             
     //@IBOutlet weak var window: NSWindow!
     var window: NSWindow!
-    
-    func applicationDidFinishLaunching(aNotification: NSNotification?) {
-        // Insert code here to initialize your application
-        
-        AppData.instance // initialize
-        AppData.instance.mainWindowController = MainWindowController()
-        self.window = AppData.instance.mainWindowController?.window
-        
-        AppData.instance.mainWindowController?.showWindow(nil)
-        AppData.instance.mainWindowController?.window!.makeKeyAndOrderFront(nil)
+
+    func applicationDidFinishLaunching(notification: NSNotification) {
+
     }
 
-    func applicationWillTerminate(aNotification: NSNotification?) {
+    func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
 

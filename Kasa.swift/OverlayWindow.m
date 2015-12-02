@@ -1,7 +1,6 @@
 
 #import "OverlayWindow.h"
 #include <Carbon/Carbon.h>
-#import "Kasa_swift-Swift.h"
 
 // A bunch of defines to handle hotkeys - if command-return is pressed, we switch modes on the blue selection box (another overlay window), switching between vertical/horizontal tracking.
 const UInt32 kMyHotKeyIdentifier = 'lasa';
@@ -24,20 +23,6 @@ pascal OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEven
 pascal OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,void *userData)
 {
     OverlayWindow *window = (OverlayWindow *)userData;
-    
-    if([AppData instance].isAlpha)
-    {
-        [window setIgnoresMouseEvents:NO];
-//        [window setBackgroundColor:[NSColor controlHighlightColor]];
-    }
-    else
-    {
-        [window setIgnoresMouseEvents:YES];
-//        [window setBackgroundColor:[NSColor clearColor]];
-    }
-    
-    [[AppData instance] setIsAlpha:![[AppData instance] isAlpha]];
-    
     return noErr;
 }
 
