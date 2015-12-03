@@ -14,7 +14,6 @@
 		A71097C119BCB2480034FE88 /* OverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A71097C019BCB2480034FE88 /* OverlayWindow.m */; };
 		A71097C319BCB3FE0034FE88 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097C219BCB3FE0034FE88 /* AppData.swift */; };
 		A71097C719BCBA8E0034FE88 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A71097C619BCBA8E0034FE88 /* MainWindow.xib */; };
-		A71097C919BCC1380034FE88 /* NSColor+CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097C819BCC1370034FE88 /* NSColor+CGColor.swift */; };
 		A7393ED71C0F284300C769F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7393ED61C0F284300C769F7 /* main.swift */; };
 		A7393ED91C0F2C8000C769F7 /* LyricWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7393ED81C0F2C8000C769F7 /* LyricWindow.swift */; };
 		A7393EDB1C0F2F7E00C769F7 /* LyricWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7393EDA1C0F2F7E00C769F7 /* LyricWindowController.swift */; };
@@ -35,6 +34,9 @@
 		A7B8722A19BEA78E0091E37A /* NSAppleScript+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8721B19BEA78E0091E37A /* NSAppleScript+Handler.m */; };
 		A7F7D52F1C0F43E600E0AC0F /* LyricManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F7D52E1C0F43E600E0AC0F /* LyricManager.swift */; };
 		A7F7D5341C0F534500E0AC0F /* LyricManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F7D52E1C0F43E600E0AC0F /* LyricManager.swift */; };
+		A7F7D54B1C10BF4900E0AC0F /* Lyric.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F7D54A1C10BF4900E0AC0F /* Lyric.swift */; };
+		A7F7D54C1C10C2DF00E0AC0F /* Lyric.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F7D54A1C10BF4900E0AC0F /* Lyric.swift */; };
+		A7F7D54E1C10CC3200E0AC0F /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A7F7D54D1C10CC3200E0AC0F /* test.mp3 */; };
 		AEB1B38057838BE4E34AFC15 /* Pods_Kasa_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092BAF5BD12BE0839C40E73 /* Pods_Kasa_swiftTests.framework */; };
 		F93E1EC12E2C93D03E36B2A1 /* Pods_Kasa_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F1940F2A32E4CA8B7F4B0C /* Pods_Kasa_swift.framework */; };
 /* End PBXBuildFile section */
@@ -67,7 +69,6 @@
 		A71097C019BCB2480034FE88 /* OverlayWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayWindow.m; sourceTree = "<group>"; };
 		A71097C219BCB3FE0034FE88 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		A71097C619BCBA8E0034FE88 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		A71097C819BCC1370034FE88 /* NSColor+CGColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+CGColor.swift"; sourceTree = "<group>"; };
 		A7393ED61C0F284300C769F7 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A7393ED81C0F2C8000C769F7 /* LyricWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricWindow.swift; sourceTree = "<group>"; };
 		A7393EDA1C0F2F7E00C769F7 /* LyricWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricWindowController.swift; sourceTree = "<group>"; };
@@ -93,6 +94,8 @@
 		A7B8721A19BEA78E0091E37A /* NSAppleScript+Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAppleScript+Handler.h"; sourceTree = "<group>"; };
 		A7B8721B19BEA78E0091E37A /* NSAppleScript+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleScript+Handler.m"; sourceTree = "<group>"; };
 		A7F7D52E1C0F43E600E0AC0F /* LyricManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricManager.swift; sourceTree = "<group>"; };
+		A7F7D54A1C10BF4900E0AC0F /* Lyric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lyric.swift; sourceTree = "<group>"; };
+		A7F7D54D1C10CC3200E0AC0F /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 		B75CC25E843C38B6A81807E7 /* Pods-Kasa.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kasa.swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kasa.swift/Pods-Kasa.swift.release.xcconfig"; sourceTree = "<group>"; };
 		C092BAF5BD12BE0839C40E73 /* Pods_Kasa_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kasa_swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -157,11 +160,11 @@
 			children = (
 				A79F19C119BCCC3000A32155 /* Framework */,
 				A71097A319BCADBA0034FE88 /* AppDelegate.swift */,
-				A71097C819BCC1370034FE88 /* NSColor+CGColor.swift */,
 				A71097C219BCB3FE0034FE88 /* AppData.swift */,
 				A71097BF19BCB2480034FE88 /* OverlayWindow.h */,
 				A71097C019BCB2480034FE88 /* OverlayWindow.m */,
 				A7F7D52E1C0F43E600E0AC0F /* LyricManager.swift */,
+				A7F7D54A1C10BF4900E0AC0F /* Lyric.swift */,
 				A7393ED81C0F2C8000C769F7 /* LyricWindow.swift */,
 				A7393EDC1C0F305900C769F7 /* ShadowLabel.swift */,
 				A7393EDA1C0F2F7E00C769F7 /* LyricWindowController.swift */,
@@ -190,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				A71097B419BCADBA0034FE88 /* Kasa_swiftTests.swift */,
+				A7F7D54D1C10CC3200E0AC0F /* test.mp3 */,
 				A71097B219BCADBA0034FE88 /* Supporting Files */,
 			);
 			path = Kasa.swiftTests;
@@ -347,6 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7F7D54E1C10CC3200E0AC0F /* test.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,12 +464,12 @@
 				A7F7D52F1C0F43E600E0AC0F /* LyricManager.swift in Sources */,
 				A7B8722A19BEA78E0091E37A /* NSAppleScript+Handler.m in Sources */,
 				A71097C119BCB2480034FE88 /* OverlayWindow.m in Sources */,
+				A7F7D54B1C10BF4900E0AC0F /* Lyric.swift in Sources */,
 				A7B8722419BEA78E0091E37A /* NSAppleEventDescriptor+Number.m in Sources */,
 				A7393ED91C0F2C8000C769F7 /* LyricWindow.swift in Sources */,
 				A7393ED71C0F284300C769F7 /* main.swift in Sources */,
 				A7B8722019BEA78E0091E37A /* NSAppleEventDescriptor+Array.m in Sources */,
 				A71097C319BCB3FE0034FE88 /* AppData.swift in Sources */,
-				A71097C919BCC1380034FE88 /* NSColor+CGColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +479,7 @@
 			files = (
 				A71097B519BCADBA0034FE88 /* Kasa_swiftTests.swift in Sources */,
 				A7F7D5341C0F534500E0AC0F /* LyricManager.swift in Sources */,
+				A7F7D54C1C10C2DF00E0AC0F /* Lyric.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
