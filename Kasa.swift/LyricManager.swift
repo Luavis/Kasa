@@ -10,18 +10,13 @@ import Foundation
 import FileKit
 import SwiftHTTP
 import CryptoSwift
+import AEXML
 
-
-struct Lyric {
-    var startTime: UInt
-    var statement: String
-}
 
 class LyricManager {
 
     static let manager = LyricManager()
-    private static var lyricDownloadUrl =
-        "http://lyrics.alsong.co.kr/ALSongWebService/Service1.asmx"
+    private static var lyricDownloadUrl = NSURL(string: "http://lyrics.alsong.co.kr/ALSongWebService/Service1.asmx")!
 
 
     func getLyric(soundFilePath: String, cb:[Lyric] -> Bool) {
@@ -56,16 +51,33 @@ class LyricManager {
     }
 
     private func downloadMp3Lyric(soundFilePath: String, cb:[Lyric] -> Bool) {
-        do {
-            
-            let opt = try HTTP.POST(LyricManager.lyricDownloadUrl)
+        let request = NSMutableURLRequest(URL: LyricManager.lyricDownloadUrl)
+        let (success, id3Md5) = self.id3Md5Hash(soundFilePath)
 
-            opt.start() { response in
-
-            }
-        }
-        catch {
+        if !success {
             cb([])
+            return
+        }
+
+        request.HTTPMethod = "POST"
+        request.HTTPBody = "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"><s:Body><GetLyric8 xmlns=\"ALSongWebServer\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\"><encData></encData><stQuery><strChecksum>\(id3Md5)</strChecksum><strVersion>1.0</strVersion><strMACAddress></strMACAddress><strIPAddress>127.0.0.1</strIPAddress></stQuery></GetLyric8></s:Body></s:Envelope>".dataUsingEncoding(NSUTF8StringEncoding)
+
+        request.setValue("\"ALSongWebServer/GetLyric8\"", forHTTPHeaderField: "SOAPAction")
+        request.setValue("100-continue", forHTTPHeaderField: "Expect")
+        request.setValue("text/xml", forHTTPHeaderField: "Content-Type")
+        request.setValue("\(request.HTTPBody!.length)", forHTTPHeaderField: "Content-Length")
+
+        let opt = HTTP(request)
+
+        opt.start() { response in
+            do {
+                let xmlDoc = try AEXMLDocument(xmlData: response.data)
+                let lyricOrigin = xmlDoc.root["soap:Body"]["GetLyric8Response"]["GetLyric8Result"]["strLyric"]
+            }
+            catch {
+                cb([])
+                return
+            }
         }
     }
 
