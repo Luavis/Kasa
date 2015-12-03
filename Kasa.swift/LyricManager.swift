@@ -19,16 +19,16 @@ class LyricManager {
     private static var lyricDownloadUrl = NSURL(string: "http://lyrics.alsong.co.kr/ALSongWebService/Service1.asmx")!
 
 
-    func getLyric(soundFilePath: String, cb:[Lyric] -> Bool) {
+    func getLyric(soundFilePath: String, cb:Lyrics -> Void) {
 
         self.downloadLyric(soundFilePath, cb: cb)
     }
 
-    func downloadLyric(soundFilePath: String, cb:[Lyric] -> Bool){
+    func downloadLyric(soundFilePath: String, cb:Lyrics -> Void){
         let soundFile = DataFile(path: Path(soundFilePath))
 
         if !soundFile.exists {
-            cb([])
+            cb(Lyrics.empty)
             return
         }
 
@@ -46,16 +46,16 @@ class LyricManager {
             }
         }
         catch {
-            cb([])
+            cb(Lyrics.empty)
         }
     }
 
-    private func downloadMp3Lyric(soundFilePath: String, cb:[Lyric] -> Bool) {
+    private func downloadMp3Lyric(soundFilePath: String, cb:Lyrics -> Void) {
         let request = NSMutableURLRequest(URL: LyricManager.lyricDownloadUrl)
         let (success, id3Md5) = self.id3Md5Hash(soundFilePath)
 
         if !success {
-            cb([])
+            cb(Lyrics.empty)
             return
         }
 
@@ -72,16 +72,23 @@ class LyricManager {
         opt.start() { response in
             do {
                 let xmlDoc = try AEXMLDocument(xmlData: response.data)
-                let lyricOrigin = xmlDoc.root["soap:Body"]["GetLyric8Response"]["GetLyric8Result"]["strLyric"]
+                let lyricOrigin = xmlDoc.root["soap:Body"]["GetLyric8Response"]["GetLyric8Result"]["strLyric"].stringValue
+
+                let lyrics = Lyrics.decode(lyricOrigin)
+                if let lyrics = lyrics {
+                    cb(lyrics)
+                }
+                else {
+                    cb(Lyrics.empty)
+                }
             }
             catch {
-                cb([])
-                return
+                cb(Lyrics.empty)
             }
         }
     }
 
-    private func downloadNonMp3Lyric(soundFilePath: String, cb:[Lyric] -> Bool) {
+    private func downloadNonMp3Lyric(soundFilePath: String, cb:Lyrics -> Void) {
         
     }
 
