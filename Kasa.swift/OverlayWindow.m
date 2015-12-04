@@ -3,7 +3,7 @@
 #include <Carbon/Carbon.h>
 
 // A bunch of defines to handle hotkeys - if command-return is pressed, we switch modes on the blue selection box (another overlay window), switching between vertical/horizontal tracking.
-const UInt32 kMyHotKeyIdentifier = 'lasa';
+const UInt32 kMyHotKeyIdentifier = 'kasa';
 const UInt32 kMyHotKey = 36; //the return key
 
 EventHotKeyRef gMyHotKeyRef;
