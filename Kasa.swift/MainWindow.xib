@@ -38,7 +38,7 @@
                             <constraint firstAttribute="height" constant="117" id="1j8-oe-an6"/>
                         </constraints>
                         <animations/>
-                        <textFieldCell key="cell" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" drawsBackground="YES" id="jmc-n4-w3f">
+                        <textFieldCell key="cell" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" drawsBackground="YES" id="jmc-n4-w3f" customClass="VerticallyCenteredTextFieldCell" customModule="Kasa_swift" customModuleProvider="target">
                             <font key="font" size="24" name="AppleSDGothicNeo-ExtraBold"/>
                             <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>

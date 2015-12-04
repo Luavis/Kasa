@@ -8,6 +8,27 @@
 
 import Cocoa
 
+
+class VerticallyCenteredTextFieldCell:NSTextFieldCell {
+    override func titleRectForBounds(theRect: NSRect) -> NSRect {
+
+        let stringHeight = self.attributedStringValue.size().height
+        var titleRect = super.titleRectForBounds(theRect)
+
+        let oldOriginY = theRect.origin.y
+
+        titleRect.origin.y = theRect.origin.y + (theRect.size.height - stringHeight) / 2.0
+        titleRect.size.height = titleRect.size.height - (titleRect.origin.y - oldOriginY)
+
+        return titleRect
+    }
+
+    override func drawInteriorWithFrame(cellFrame: NSRect, inView controlView: NSView) {
+        super.drawInteriorWithFrame(self.titleRectForBounds(cellFrame), inView: controlView)
+    }
+}
+
+
 class ShadowLabel: NSTextField {
 
     var shadowColor = NSColor.blackColor();
