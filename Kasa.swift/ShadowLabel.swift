@@ -11,9 +11,9 @@ import Cocoa
 class ShadowLabel: NSTextField {
 
     var shadowColor = NSColor.blackColor();
-    var shadowOffset = CGSize(width: 6.0, height: 6.0)
-    var shadowRadius:Float = 30.0
-    var shadowOpacity:Float = 5.0
+    var shadowOffset = CGSize(width: 1.0, height: 1.0)
+    var shadowRadius:Float = 2.0
+    var shadowOpacity:Float = 1.0
 
 
     override func awakeFromNib() {
