@@ -36,6 +36,7 @@ class iTunesConnection: NSObject {
         var error:NSDictionary?
         let result = iTunesConnection.iTunesListenScript.executeAndReturnError(&error)
         if error != nil {
+            self.delegate?.musicChanged(nil)
             return false
         }
 
@@ -58,8 +59,16 @@ class iTunesConnection: NSObject {
             let information = notification.userInfo!
             let state:String = information["Player State"] as! String
             if state == "Playing" {
-                let location:String = information["Location"]! as! String
-                delegate.musicChanged(location)
+                let location = information["Location"] as? String
+
+                if let location = location {
+                    let fileUrl = NSURL(string: location)!
+
+                    delegate.musicChanged(fileUrl.path)
+                }
+                else {
+                    delegate.musicChanged(nil)
+                }
             }
             else {
                 delegate.musicChanged(nil)

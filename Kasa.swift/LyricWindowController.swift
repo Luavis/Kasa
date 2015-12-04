@@ -37,18 +37,25 @@ class LyricWindowController: NSWindowController, iTunesConnectionDelegate {
     }
 
     func musicChanged(path: String?) {
+        print(path)
+        let window = self.window as! LyricWindow
+
         if let path = path {
+
             LyricManager.manager.getLyric(path) { lyrics in
 
-                let window = self.window as! LyricWindow
-
-                if lyrics === Lyrics.empty {
+                if lyrics.isEmpty {
+                    self.changeLyrics(Lyrics.empty)
                     window.setLyricText(LyricWindowController.lyricNotFoundMsg)
                 }
                 else {
                     self.changeLyrics(lyrics)
                 }
             }
+        }
+        else {
+            self.changeLyrics(Lyrics.empty)
+            window.setLyricText(LyricWindowController.lyricNotFoundMsg)
         }
     }
 
@@ -57,6 +64,11 @@ class LyricWindowController: NSWindowController, iTunesConnectionDelegate {
     }
 
     func iTunesTimer() {
+
+        if self.lyrics.isEmpty {
+            return
+        }
+
         let window = self.window as! LyricWindow
         let position = iTunesConnection.connection.playingPosition
         let lyric = self.lyrics[position]

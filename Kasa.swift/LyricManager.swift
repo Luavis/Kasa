@@ -89,7 +89,7 @@ class LyricManager {
     }
 
     private func downloadNonMp3Lyric(soundFilePath: String, cb:Lyrics -> Void) {
-        
+        cb(Lyrics.empty) // TODO: work in non mp3
     }
 
     private func checkID3Tag(header: [uint8]) -> Bool {

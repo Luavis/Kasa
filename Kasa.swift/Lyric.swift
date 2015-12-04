@@ -156,6 +156,10 @@ class Lyrics {
         self.size = self.lrcArray.count
     }
 
+    var isEmpty:Bool {
+        return self.lrcArray.isEmpty
+    }
+
     internal subscript(time: Double) -> Lyric? {
         get {
             if self === Lyrics.empty {
