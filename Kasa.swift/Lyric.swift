@@ -158,6 +158,10 @@ class Lyrics {
 
     internal subscript(time: Double) -> Lyric? {
         get {
+            if self === Lyrics.empty {
+                return Lyric.empty
+            }
+
             if time >= self.lrcArray[self.recentIndexSecond].startPoint {
                 var i = self.recentIndexSecond;
 

@@ -37,4 +37,10 @@ class LyricWindow: OverlayWindow{
                 super.mouseExited(theEvent)
         }
     }
+
+    func setLyricText(value: String) {
+        dispatch_async(dispatch_get_main_queue()) {
+            self.lyricLabel.stringValue = value
+        }
+    }
 }
