@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import ScriptingBridge
+
 
 protocol iTunesConnectionDelegate {
     func musicChanged(path: String?)
@@ -17,32 +19,14 @@ class iTunesConnection: NSObject {
 
     static let connection = iTunesConnection()
     static let iTunesListenScript =
-        NSAppleScript(source: "tell application \"iTunes\" to if running then\ntell current track to return &location\nend if")!
+    NSAppleScript(source: "tell application \"iTunes\" to if running then\ntell current track to return &location\nend if")!
+    static let bridge = iTunesBridge()
 
-    static let iTunesPlayingPositionScript =
-        NSAppleScript(source: "tell application \"iTunes\" to if running then\nreturn player position\nend if")!
 
     var delegate:iTunesConnectionDelegate?
 
     var playingPosition: Double {
-        var error:NSDictionary?
-
-        let result = iTunesConnection.iTunesPlayingPositionScript.executeAndReturnError(&error)
-
-        let position:Double
-
-        if error != nil {
-            return -1
-        }
-
-        if #available(OSX 10.11, *) {
-            position = result.doubleValue
-        } else {
-            // Fallback on earlier versions
-            position = Double(result.int32Value)
-        }
-
-        return position
+        return iTunesConnection.bridge.playerPosition()
     }
 
     func listen() -> Bool {

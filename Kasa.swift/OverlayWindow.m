@@ -22,7 +22,7 @@ pascal OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEven
 
 pascal OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEvent,void *userData)
 {
-    OverlayWindow *window = (OverlayWindow *)userData;
+    OverlayWindow *window = (__bridge OverlayWindow *)userData;
 
     window.ignoresMouseEvents = !window.ignoresMouseEvents;
 
@@ -58,7 +58,6 @@ pascal OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEven
                                                             owner:self 
                                                             userInfo:nil];
     [[self contentView] addTrackingArea:trackingArea];
-    [trackingArea release];
 
     if ( NSPointInRect([NSEvent mouseLocation],[self frame]) )
         [self mouseEntered:nil];
@@ -74,7 +73,7 @@ pascal OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEven
     eventType.eventClass = kEventClassKeyboard;
     eventType.eventKind  = kEventHotKeyPressed;
     
-    InstallApplicationEventHandler(gAppHotKeyFunction, 1, &eventType, (void *)self, NULL);
+    InstallApplicationEventHandler(gAppHotKeyFunction, 1, &eventType, (void *)CFBridgingRetain(self), NULL);
     
     gMyHotKeyID.signature=kMyHotKeyIdentifier;
     gMyHotKeyID.id = 1;

@@ -44,7 +44,7 @@ class Lyrics {
 
     // Static
 
-    static let delayTime:Double = 0.08
+    static let delayTime:Double = 0.09
     static let empty = Lyrics([])
 
     static func decode(lrc: String) -> Lyrics? {

@@ -23,12 +23,11 @@ class LyricWindowController: NSWindowController, iTunesConnectionDelegate {
         iTunesConnection.connection.delegate = self
         iTunesConnection.connection.listen()
 
-//        NSTimer.scheduledTimerWithTimeInterval(0.001, target: self, selector: "iTunesTimer", userInfo: nil, repeats: true)
-
+        
         dispatch_async(dispatch_queue_create("com.luavis.kasa.updater", nil)) {
             while true {
                 self.iTunesTimer()
-                NSThread.sleepForTimeInterval(NSTimeInterval(0.005))
+                NSThread.sleepForTimeInterval(NSTimeInterval(0.001))
             }
         }
     }
