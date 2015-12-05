@@ -40,7 +40,7 @@ pascal OSStatus MyHotKeyHandler(EventHandlerCallRef nextHandler,EventRef theEven
     {
         [self setIgnoresMouseEvents:YES];
         [self setOpaque:NO]; // Needed so we can see through it when we have clear stuff on top
-        [self setHasShadow:YES];
+        [self setHasShadow:NO];
         [self setLevel:NSScreenSaverWindowLevel]; // Let's make it sit on top of everything else
     }
     
