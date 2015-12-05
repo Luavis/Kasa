@@ -12,7 +12,6 @@
 		A71097A919BCADBA0034FE88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A71097A719BCADBA0034FE88 /* MainMenu.xib */; };
 		A71097B519BCADBA0034FE88 /* Kasa_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097B419BCADBA0034FE88 /* Kasa_swiftTests.swift */; };
 		A71097C119BCB2480034FE88 /* OverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A71097C019BCB2480034FE88 /* OverlayWindow.m */; };
-		A71097C319BCB3FE0034FE88 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71097C219BCB3FE0034FE88 /* AppData.swift */; };
 		A71097C719BCBA8E0034FE88 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A71097C619BCBA8E0034FE88 /* MainWindow.xib */; };
 		A737D9A61C11C709004ADC88 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A737D9A51C11C709004ADC88 /* ScriptingBridge.framework */; };
 		A737D9AA1C11C9BD004ADC88 /* iTunesBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A737D9A91C11C9BD004ADC88 /* iTunesBridge.m */; };
@@ -63,7 +62,6 @@
 		A71097BE19BCB2470034FE88 /* Kasa.swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kasa.swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		A71097BF19BCB2480034FE88 /* OverlayWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayWindow.h; sourceTree = "<group>"; };
 		A71097C019BCB2480034FE88 /* OverlayWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayWindow.m; sourceTree = "<group>"; };
-		A71097C219BCB3FE0034FE88 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		A71097C619BCBA8E0034FE88 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		A737D9A41C11C6D4004ADC88 /* iTunes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunes.h; sourceTree = "<group>"; };
 		A737D9A51C11C709004ADC88 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
@@ -150,7 +148,6 @@
 			children = (
 				A79F19C119BCCC3000A32155 /* Framework */,
 				A71097A319BCADBA0034FE88 /* AppDelegate.swift */,
-				A71097C219BCB3FE0034FE88 /* AppData.swift */,
 				A737D9A41C11C6D4004ADC88 /* iTunes.h */,
 				A71097BF19BCB2480034FE88 /* OverlayWindow.h */,
 				A71097C019BCB2480034FE88 /* OverlayWindow.m */,
@@ -436,7 +433,6 @@
 				A7F7D54B1C10BF4900E0AC0F /* Lyric.swift in Sources */,
 				A7393ED91C0F2C8000C769F7 /* LyricWindow.swift in Sources */,
 				A7393ED71C0F284300C769F7 /* main.swift in Sources */,
-				A71097C319BCB3FE0034FE88 /* AppData.swift in Sources */,
 				A737D9AA1C11C9BD004ADC88 /* iTunesBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

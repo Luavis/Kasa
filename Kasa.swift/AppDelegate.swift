@@ -14,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var window: NSWindow!
 
     func applicationDidFinishLaunching(notification: NSNotification) {
-        let windowController = LyricWindowController();
+        let windowController = LyricWindowController()
         self.window = windowController.window
 
         windowController.showWindow(nil)

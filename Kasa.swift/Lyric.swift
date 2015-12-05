@@ -113,15 +113,15 @@ class Lyrics {
             }
         }
 
-        return Lyrics(lrcComponentArray);
+        return Lyrics(lrcComponentArray)
     }
 
     // Member
 
     var lrcArray:[Lyric] = []
-    var recentIndexFirst:Int = 0;
-    var recentIndexSecond:Int = 0;
-    private let size:Int;
+    var recentIndexFirst:Int = 0
+    var recentIndexSecond:Int = 0
+    private let size:Int
 
 
     init(_ lrcs:[Lyric]) {
@@ -167,7 +167,7 @@ class Lyrics {
             }
 
             if time >= self.lrcArray[self.recentIndexSecond].startPoint {
-                var i = self.recentIndexSecond;
+                var i = self.recentIndexSecond
 
                 while i < self.size {
                     self.lrcArray[i].startPoint
