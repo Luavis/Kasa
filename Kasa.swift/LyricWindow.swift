@@ -14,12 +14,13 @@ class LyricWindow: OverlayWindow{
     @IBOutlet weak var informationLabel: ShadowLabel!
 
     override func awakeFromNib() {
-        self.backgroundColor = NSColor.blackColor().colorWithAlphaComponent(0.08)
+        self.backgroundColor = NSColor.blackColor().colorWithAlphaComponent(0.00)
         self.collectionBehavior.insert(.CanJoinAllSpaces)
         super.awakeFromNib()
     }
 
     override func mouseEntered(theEvent: NSEvent) {
+        self.backgroundColor = NSColor.blackColor().colorWithAlphaComponent(0.15)
         self.informationLabel.hidden = false;
 
         NSAnimationContext.runAnimationGroup({ (context) -> Void in
@@ -30,6 +31,7 @@ class LyricWindow: OverlayWindow{
     }
 
     override func mouseExited(theEvent: NSEvent) {
+        self.backgroundColor = NSColor.blackColor().colorWithAlphaComponent(0.00)
         NSAnimationContext.runAnimationGroup({ (context) -> Void in
             self.informationLabel.alphaValue = 0.0;
             }) { () -> Void in
