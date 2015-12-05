@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LyricWindow: OverlayWindow{
+class LyricWindow: OverlayWindow {
 
     @IBOutlet weak var lyricLabel: ShadowLabel!
     @IBOutlet weak var informationLabel: ShadowLabel!
@@ -20,22 +20,24 @@ class LyricWindow: OverlayWindow{
     }
 
     override func mouseEntered(theEvent: NSEvent) {
-        self.backgroundColor = NSColor.blackColor().colorWithAlphaComponent(0.15)
-        self.informationLabel.hidden = false;
+        self.informationLabel.hidden = false
 
         NSAnimationContext.runAnimationGroup({ (context) -> Void in
-            self.informationLabel.alphaValue = 1.0;
+            context.duration = 0.5
+            self.informationLabel.animator().alphaValue = 1.0
+            self.animator().backgroundColor = NSColor.blackColor().colorWithAlphaComponent(0.15)
         }) { () -> Void in
             super.mouseEntered(theEvent)
         }
     }
 
     override func mouseExited(theEvent: NSEvent) {
-        self.backgroundColor = NSColor.blackColor().colorWithAlphaComponent(0.00)
         NSAnimationContext.runAnimationGroup({ (context) -> Void in
-            self.informationLabel.alphaValue = 0.0;
+            context.duration = 0.5
+            self.informationLabel.animator().alphaValue = 0.0
+            self.animator().backgroundColor = NSColor.blackColor().colorWithAlphaComponent(0.00)
             }) { () -> Void in
-                self.informationLabel.hidden = true;
+                self.informationLabel.hidden = true
                 super.mouseExited(theEvent)
         }
     }
