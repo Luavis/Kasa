@@ -19,12 +19,11 @@ class LyricManager {
     private static var lyricDownloadUrl = NSURL(string: "http://lyrics.alsong.co.kr/ALSongWebService/Service1.asmx")!
 
 
-    func getLyric(soundFilePath: String, cb:Lyrics -> Void) {
-
-        self.downloadLyric(soundFilePath, cb: cb)
+    func getLyric(soundFilePath: String, information: iTunesTrackInformation, cb:Lyrics -> Void) {
+        self.downloadLyric(soundFilePath, information: information, cb: cb)
     }
 
-    func downloadLyric(soundFilePath: String, cb:Lyrics -> Void){
+    func downloadLyric(soundFilePath: String, information: iTunesTrackInformation, cb:Lyrics -> Void){
         let soundFile = DataFile(path: Path(soundFilePath))
 
         if !soundFile.exists {
@@ -42,7 +41,7 @@ class LyricManager {
                 return self.downloadMp3Lyric(soundFilePath, cb: cb)
             }
             else {
-                return self.downloadNonMp3Lyric(soundFilePath, cb: cb)
+                return self.downloadNonMp3Lyric(soundFilePath, information: information, cb: cb)
             }
         }
         catch {
@@ -88,7 +87,7 @@ class LyricManager {
         }
     }
 
-    private func downloadNonMp3Lyric(soundFilePath: String, cb:Lyrics -> Void) {
+    private func downloadNonMp3Lyric(soundFilePath: String, information: iTunesTrackInformation, cb:Lyrics -> Void) {
         cb(Lyrics.empty) // TODO: work in non mp3
     }
 

@@ -36,27 +36,28 @@ class LyricWindowController: NSWindowController, iTunesConnectionDelegate {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func musicChanged(path: String?) {
-        print(path)
+    func musicChanged(path: String?, information:iTunesTrackInformation?) {
         let window = self.window as! LyricWindow
 
         if let path = path {
+            if let information = information {
+                LyricManager.manager.getLyric(path, information: information) { lyrics in
 
-            LyricManager.manager.getLyric(path) { lyrics in
+                    if lyrics.isEmpty {
+                        self.changeLyrics(Lyrics.empty)
+                        window.setLyricText(LyricWindowController.lyricNotFoundMsg)
+                    }
+                    else {
+                        self.changeLyrics(lyrics)
+                    }
+                }
 
-                if lyrics.isEmpty {
-                    self.changeLyrics(Lyrics.empty)
-                    window.setLyricText(LyricWindowController.lyricNotFoundMsg)
-                }
-                else {
-                    self.changeLyrics(lyrics)
-                }
+                return
             }
         }
-        else {
-            self.changeLyrics(Lyrics.empty)
-            window.setLyricText(LyricWindowController.lyricNotFoundMsg)
-        }
+
+        self.changeLyrics(Lyrics.empty)
+        window.setLyricText(LyricWindowController.lyricNotFoundMsg)
     }
 
     func changeLyrics(lyrics:Lyrics) {

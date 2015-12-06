@@ -11,7 +11,7 @@ import ScriptingBridge
 
 
 protocol iTunesConnectionDelegate {
-    func musicChanged(path: String?)
+    func musicChanged(path: String?, information:iTunesTrackInformation?)
 }
 
 
@@ -36,7 +36,7 @@ class iTunesConnection: NSObject {
         var error:NSDictionary?
         let result = iTunesConnection.iTunesListenScript.executeAndReturnError(&error)
         if error != nil {
-            self.delegate?.musicChanged(nil)
+            self.delegate?.musicChanged(nil, information: nil)
             return false
         }
 
@@ -45,7 +45,7 @@ class iTunesConnection: NSObject {
         if let resultValue = resultValue {
             self.delegate?.musicChanged("/Volumes/" +
                 resultValue.stringByReplacingOccurrencesOfString(":", withString: "/")
-                .stringByReplacingOccurrencesOfString("\r", withString: "")
+                    .stringByReplacingOccurrencesOfString("\r", withString: ""), information: iTunesConnection.bridge.currentTrack()
             )
             return true
         }
@@ -64,14 +64,15 @@ class iTunesConnection: NSObject {
                 if let location = location {
                     let fileUrl = NSURL(string: location)!
 
-                    delegate.musicChanged(fileUrl.path)
+                    let iTunesInformation = iTunesTrackInformation(title: information["title"] as! String, artist: information["artist"] as! String)
+                    delegate.musicChanged(fileUrl.path, information: iTunesInformation)
                 }
                 else {
-                    delegate.musicChanged(nil)
+                    delegate.musicChanged(nil, information: nil)
                 }
             }
             else {
-                delegate.musicChanged(nil)
+                delegate.musicChanged(nil, information: nil)
             }
         }
     }

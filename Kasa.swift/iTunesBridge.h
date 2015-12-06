@@ -8,8 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+@interface iTunesTrackInformation: NSObject
+@property (nonatomic, nonnull, readonly) NSString *title;
+@property (nonatomic, nonnull, readonly) NSString *artist;
+
+- (nonnull instancetype)initWithTitle:(nonnull NSString *)title artist:(nonnull NSString *)artist;
+- (nonnull NSString *)description;
+@end
+
 
 @interface iTunesBridge : NSObject
 - (double)playerPosition;
+- (nonnull iTunesTrackInformation *)currentTrack;
 
 @end

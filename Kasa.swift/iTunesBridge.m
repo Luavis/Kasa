@@ -13,6 +13,25 @@
 
 iTunesApplication *application;
 
+@implementation iTunesTrackInformation
+
+- (instancetype)initWithTitle:(NSString *)title artist:(NSString *)artist {
+
+    self = [super init];
+    if(self) {
+        _title = title;
+        _artist = artist;
+    }
+
+    return self;
+}
+
+- (nonnull NSString *)description {
+    return [NSString stringWithFormat:@"[iTunesInform] Title: %@, Artist: %@", self.title, self.artist];
+}
+
+@end
+
 @implementation iTunesBridge
 
 + (void)initialize {
@@ -21,6 +40,14 @@ iTunesApplication *application;
 
 - (double)playerPosition {
     return application.playerPosition;
+}
+
+- (iTunesTrackInformation *)currentTrack {
+    iTunesTrack *track = application.currentTrack;
+
+    iTunesTrackInformation *information = [[iTunesTrackInformation alloc] initWithTitle:track.name artist:track.artist];
+
+    return information;
 }
 
 @end
